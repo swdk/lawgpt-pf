@@ -113,6 +113,18 @@
         }
       },
       "source": "final_check.jinja2"
+    },
+    "find_references.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "find_references.py",
+      "function": "find_references"
     }
   }
 }
