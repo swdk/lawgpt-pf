@@ -1,0 +1,102 @@
+{
+  "package": {},
+  "code": {
+    "hello.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Please replace the template with your own prompt.",
+      "source": "hello.jinja2"
+    },
+    "hello.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "hello.py",
+      "function": "my_python_tool"
+    },
+    "add_example.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "add_example.py",
+      "function": "my_python_tool"
+    },
+    "first_and_last_paragraph.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "first_and_last_paragraph.py",
+      "function": "get_first_and_last_paragraph_tool"
+    },
+    "summary_prompy.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "summary_prompy.jinja2"
+    },
+    "summary_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "summary_prompt.jinja2"
+    },
+    "summary_llm_variant_1.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "summary_llm_variant_1.jinja2"
+    },
+    "summary.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "chat_history": {
+          "type": [
+            "string"
+          ]
+        },
+        "question": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "summary.jinja2"
+    }
+  }
+}
