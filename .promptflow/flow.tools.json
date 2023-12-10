@@ -97,6 +97,22 @@
         }
       },
       "source": "summary.jinja2"
+    },
+    "final_check.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "chat_history": {
+          "type": [
+            "string"
+          ]
+        },
+        "question": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "final_check.jinja2"
     }
   }
 }

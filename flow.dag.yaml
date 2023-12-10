@@ -384,7 +384,7 @@ inputs:
 outputs:
   output_prompt:
     type: string
-    reference: ${summary.output}
+    reference: ${final_check.output}
 nodes:
 - name: first_paragraph
   type: python
@@ -409,5 +409,16 @@ nodes:
     model: gpt-3.5-turbo-16k
     temperature: 0
     question: ${summary_prompt.output}
+  connection: open_ai_conenction
+  api: chat
+- name: final_check
+  type: llm
+  source:
+    type: code
+    path: final_check.jinja2
+  inputs:
+    model: gpt-3.5-turbo
+    temperature: 0
+    question: ${summary.output}
   connection: open_ai_conenction
   api: chat
