@@ -125,6 +125,33 @@
       },
       "source": "find_references.py",
       "function": "find_references"
+    },
+    "find_reference_llm.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "chat_history": {
+          "type": [
+            "string"
+          ]
+        },
+        "question": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "find_reference_llm.jinja2"
+    },
+    "find_reference_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "find_reference_prompt.jinja2"
     }
   }
 }
