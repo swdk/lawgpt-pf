@@ -6,7 +6,7 @@ import re
 # Please update the function name/signature per need
 @tool
 def find_references(input1: str) -> str:
-    _, reference_text = re.split(r'\n\s*\n(?=\[\d{1,3}\])', input1, maxsplit=1)
+    main_text, reference_text = re.split(r'\n\s*\n(?=\[\d{1,3}\])', input1, maxsplit=1)
     reference_dict = {}
     references = re.findall(r'\[(\d+)\]\s*(.*?)\n(?=\[\d{1,3}\]|\Z)', reference_text, re.DOTALL)
     for reference in references:
@@ -26,5 +26,4 @@ def find_references(input1: str) -> str:
             # [8] CA judgment, [84]
 
         reference_dict[ref_number] = ref_text
-
-    return reference_dict
+    return {'main_text':main_text, 'reference_dict':reference_dict}
