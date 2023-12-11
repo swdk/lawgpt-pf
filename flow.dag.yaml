@@ -631,20 +631,13 @@ outputs:
     type: string
     reference: ${final_check.output}
 nodes:
-- name: first_paragraph
-  type: python
-  source:
-    type: code
-    path: first_and_last_paragraph.py
-  inputs:
-    input1: ${inputs.text}
 - name: summary_prompt
   type: prompt
   source:
     type: code
     path: summary_prompt.jinja2
   inputs:
-    text: ${first_paragraph.output}
+    text: ${replace_references_str.output}
 - name: summary
   type: llm
   source:
@@ -667,7 +660,7 @@ nodes:
     question: ${summary.output}
   connection: open_ai_conenction
   api: chat
-- name: find_references
+- name: replace_references_str
   type: python
   source:
     type: code
@@ -680,7 +673,7 @@ nodes:
     type: code
     path: find_reference_prompt.jinja2
   inputs:
-    text: ${find_references.output}
+    text: ${replace_references_str.output}
 - name: find_reference_llm
   type: llm
   source:
