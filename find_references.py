@@ -10,12 +10,12 @@ def find_references(input1: str) -> str:
     reference_dict = {}
     references = re.findall(r'\[(\d+)\]\s*(.*?)\n(?=\[\d{1,3}\]|\Z)', reference_text, re.DOTALL)
     for reference in references:
-        ref_number = int(reference[0].strip())
+        ref_number = reference[0].strip()
         ref_text = reference[1].strip().replace('\n', '').removesuffix('.')
         
         # Replace ibid with source from previous number
         if 'ibid' in ref_text.lower():
-            prev_ref_text =  reference_dict[ref_number-1]
+            prev_ref_text =  reference_dict[str(int(ref_number)-1)]
             # Using regular expression to remove non-alphabetic characters at the end
             prev_ref_text = re.sub(r'[^a-zA-Z]*$', '', prev_ref_text)
             ref_text = re.sub('ibid', prev_ref_text, ref_text, flags=re.IGNORECASE)
@@ -24,6 +24,12 @@ def find_references(input1: str) -> str:
             # ->
             # [7] CA judgment, [62]
             # [8] CA judgment, [84]
-
         reference_dict[ref_number] = ref_text
+
+    # Replace text like [12]-[14] with [12], [13], [14]
+    main_text = re.sub(r'\[(\d{1,3})\]-\[(\d{1,3})\]', lambda match: ', '.join([f'[{i}]' for i in range(int(match.group(1)), int(match.group(2)) + 1)]), main_text)
+
+    # Replace references in the main text
+    main_text = re.sub(r'\[(\d{1,3})\]', lambda match: f' (reference: {reference_dict.get(match.group(1), "")})', main_text)
+
     return {'main_text':main_text, 'reference_dict':reference_dict}
