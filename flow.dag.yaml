@@ -631,35 +631,6 @@ outputs:
     type: string
     reference: ${final_check.output}
 nodes:
-- name: summary_prompt
-  type: prompt
-  source:
-    type: code
-    path: summary_prompt.jinja2
-  inputs:
-    text: ${replace_references_str.output}
-- name: summary
-  type: llm
-  source:
-    type: code
-    path: summary.jinja2
-  inputs:
-    model: gpt-3.5-turbo-16k
-    temperature: 0
-    question: ${summary_prompt.output}
-  connection: open_ai_conenction
-  api: chat
-- name: final_check
-  type: llm
-  source:
-    type: code
-    path: final_check.jinja2
-  inputs:
-    model: gpt-3.5-turbo
-    temperature: 0
-    question: ${summary.output}
-  connection: open_ai_conenction
-  api: chat
 - name: replace_references_str
   type: python
   source:
@@ -685,3 +656,41 @@ nodes:
     temperature: 0
   connection: open_ai_conenction
   api: chat
+- name: summary_prompt
+  type: prompt
+  source:
+    type: code
+    path: summary_prompt.jinja2
+  inputs:
+    text: ${replace_references_str.output}
+    detected_references: ${find_reference_llm.output}
+- name: summary
+  type: llm
+  source:
+    type: code
+    path: summary.jinja2
+  inputs:
+    model: gpt-3.5-turbo-16k
+    temperature: 0
+    question: ${summary_prompt.output}
+  connection: open_ai_conenction
+  api: chat
+- name: final_check
+  type: llm
+  source:
+    type: code
+    path: final_check.jinja2
+  inputs:
+    model: gpt-3.5-turbo
+    temperature: 0
+    question: ${summary.output}
+  connection: open_ai_conenction
+  api: chat
+- name: gemini_llm
+  type: python
+  source:
+    type: code
+    path: gemini_llm.py
+  inputs:
+    input1: ${summary_prompt.output}
+    conn: gemini

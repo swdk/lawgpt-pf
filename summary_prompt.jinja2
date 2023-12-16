@@ -1,11 +1,15 @@
 You are a lawyer  doing legal summary for the case with extreme care to details
-Case information is below
+Case information:
     
     {{text.main_text}}
-    
+
+Case References / Precedence:
+ 
+ {{detected_references}}
+
 Given the context information and not prior knowledge,
 write a detailed legal summary
-for another lawyer doing president research for a  similar case,
+for another lawyer doing president research for a similar case,
 Write the legal summary in the following Format:
 
 The following are the headings of the legal research, for each point, expand and fill in contents according to the case information. 
@@ -36,9 +40,8 @@ The following are the headings of the legal research, for each point, expand and
     - Sentences for each charge
     - Include the summary of the case, be as detail as possible and do not skip over details such as numbers
     - Case usefulness for future references
-    - Key value pairs of all precedence mentioned in the case with case number followed by their reason of inclusion respectively.
+    - References (Precedence) and arguments, key value pairs of all precedence mentioned in the case with case number followed by their arguments that it was supporting. Include ALL references in the Case References / Precedence section and their arguments that it was supporting and DO NOT skip over any of the references.
     - Useful keywords or phrase representing this case for search, seperated by ',' and nothing else.
-
 
 Summary:
 
