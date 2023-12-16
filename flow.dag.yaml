@@ -629,7 +629,7 @@ inputs:
 outputs:
   output_prompt:
     type: string
-    reference: ${final_check.output}
+    reference: ${gemini_continue_llm.output}
 nodes:
 - name: replace_references_str
   type: python
@@ -672,7 +672,7 @@ nodes:
   inputs:
     model: gpt-3.5-turbo-16k
     temperature: 0
-    question: ${summary_prompt.output}
+    question: ""
   connection: open_ai_conenction
   api: chat
 - name: final_check
@@ -686,7 +686,7 @@ nodes:
     question: ${summary.output}
   connection: open_ai_conenction
   api: chat
-- name: gemini_llm
+- name: gemini_summary_llm
   type: python
   source:
     type: code
@@ -694,3 +694,19 @@ nodes:
   inputs:
     input1: ${summary_prompt.output}
     conn: gemini
+- name: gemini_continue_llm
+  type: python
+  source:
+    type: code
+    path: gemini_continue_llm.py
+  inputs:
+    continue_prompt: ${continue_prompt.output}
+    conn: gemini
+- name: continue_prompt
+  type: prompt
+  source:
+    type: code
+    path: continue_prompt.jinja2
+  inputs:
+    current_summary: ${gemini_summary_llm.output}
+    previous_summary_prompy: ${summary_prompt.output}

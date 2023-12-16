@@ -1,17 +1,20 @@
 from promptflow import tool
 from promptflow.connections import CustomConnection
+
 import google.generativeai as genai
+
+
+
 
 # The inputs section will change based on the arguments of the tool function, after you save the code
 # Adding type to arguments and return value will help the system show the types properly
 # Please update the function name/signature per need
 @tool
-def my_python_tool(input1: str, conn: CustomConnection) -> str:
- 
+def my_python_tool(conn: CustomConnection, continue_prompt: str, ) -> str:
     genai.configure(api_key=conn.secrets['GEMINI_API_KEY'])
     model = genai.GenerativeModel('gemini-pro')
     
-    response = model.generate_content(input1, generation_config={
+    response = model.generate_content(continue_prompt, generation_config={
         "max_output_tokens": 2048
          }, 
                                       safety_settings=[

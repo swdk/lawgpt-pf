@@ -252,6 +252,51 @@
       },
       "source": "gemini_llm.py",
       "function": "my_python_tool"
+    },
+    "gemini_too_short_llm.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "gemini_too_short_llm.py",
+      "function": "my_python_tool"
+    },
+    "gemini_continue_llm.py": {
+      "type": "python",
+      "inputs": {
+        "conn": {
+          "type": [
+            "CustomConnection"
+          ]
+        },
+        "continue_prompt": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "gemini_continue_llm.py",
+      "function": "my_python_tool"
+    },
+    "continue_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "previous_summary_prompy": {
+          "type": [
+            "string"
+          ]
+        },
+        "current_summary": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "continue_prompt.jinja2"
     }
   }
 }
