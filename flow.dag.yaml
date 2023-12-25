@@ -626,6 +626,9 @@ inputs:
 
 
       [73] HKSAR v Lau Bo‑ki, [11], a case of total denial of responsibility for the killing.
+  reference:
+    type: string
+    default: ""
 outputs:
   output_prompt:
     type: string
@@ -637,7 +640,8 @@ nodes:
     type: code
     path: find_references.py
   inputs:
-    input1: ${inputs.text}
+    main_text: ${inputs.text}
+    reference_text: ${inputs.reference}
 - name: summary_prompt
   type: prompt
   source:

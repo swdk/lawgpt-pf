@@ -169,119 +169,140 @@
 
 **Background of the case**
 
-- The defendant was accused of murdering his cohabitee on 12 September 2009.
-- He was convicted and sentenced to life imprisonment.
-- He appealed his conviction, and the Court of Appeal quashed the conviction and ordered a retrial.
-- The defendant was convicted again, and appealed again.
-- The Court of Appeal quashed the second conviction and ordered a third retrial.
-- The defendant appealed the order for a third retrial to the Court of Final Appeal.
+The appellant, Mr. Liang Yaoqiang, was convicted of murdering his cohabitee, Ms. Yeung Sau Yu, on September 12, 2009. He was convicted three times by different juries, but each conviction was overturned on appeal.
 
-**Pertinent Law**
+- First Trial: In October 2010, the appellant was convicted of murder by a unanimous jury verdict.
+- First Appeal: In November 2013, the Court of Appeal allowed the appellant's appeal and quashed the conviction due to the introduction of inadmissible hearsay evidence.
+- Second Trial: In March 2014, the appellant was again convicted of murder by a unanimous jury verdict.
+- Second Appeal: In June 2015, the Court of Appeal upheld the conviction, with a majority decision rejecting the appellant's application for leave to appeal.
+- Third Trial: In April 2018, the appellant faced a third trial, this time with the addition of a defense of diminished responsibility supported by psychiatric evidence.
+- Third Appeal: In November 2020, the Court of Appeal unanimously quashed the conviction and ordered a third retrial, citing a misdirection by the trial judge in failing to draw the jury's attention to the psychiatric evidence and its relevance to the issue of loss of self-control. 
 
-- Section 4 of the Homicide Ordinance (Cap 339) defines murder and provocation.
-- Section 83E(1) of the Criminal Procedure Ordinance (Cap 221) allows the Court of Appeal to order a retrial if it appears to the Court of Appeal that the interests of justice so require.
+**Pertinent Laws**
+
+- Section 4 of the Homicide Ordinance (Cap 339):
+  "Where on a charge of murder there is evidence on which the jury can find that the person charged was provoked (whether by things done or by things said or by both together) to lose his self‑control, the question whether the provocation was enough to make a reasonable man do as he did shall be left to be determined by the jury; and in determining that question the jury shall take into account everything both done and said according to the effect which, in their opinion, it would have on a reasonable man."
+
+- Hong Kong Bill of Rights Ordinance (Cap 383), section 8:
+  "Everyone has the right to a fair and public hearing by an independent and impartial tribunal established by law."
 
 **Case Nature**
 
-- Appeal
+Appeal
 
 **Appeal Type**
 
-- Discretionary Appeals (challenging the lower or appellate court's abuse of discretion in making a particular decision)
+Legal Error Appeals
 
 **Newton hearing**
 
-- N/A
+N/A
 
 **Evidences**
 
-- Prosecution:
-    - Evidence that the defendant killed the deceased.
-    - Evidence that the defendant had a history of violence.
-    - Evidence that the defendant had threatened to kill the deceased.
-- Defense:
-    - Evidence that the defendant was provoked by the deceased.
-    - Evidence that the defendant was suffering from a mental disorder.
+Prosecution:
+
+- The prosecution presented physical evidence, including the murder weapon and forensic analysis of the crime scene.
+- Video records of interviews conducted with the appellant shortly after the incident, in which he admitted to killing the deceased.
+- Testimony from witnesses who heard or saw the events leading up to and including the murder.
+
+Defense:
+
+- The appellant presented a defense of provocation, arguing that the deceased had been having an affair and had taunted and provoked him leading up to the incident.
+- Psychiatric evidence was introduced to support the defense of diminished responsibility, suggesting that the appellant was suffering from an abnormality of mind at the time of the killing.
 
 **Prosecution Case**
 
-- The prosecution argued that the defendant was guilty of murder.
-- They relied on the evidence that the defendant killed the deceased and had a history of violence and threats.
+The prosecution argued that the appellant had intentionally and unlawfully killed the deceased, and that there was no evidence to support a defense of provocation or diminished responsibility.
 
 **Defence Case**
 
-- The defense argued that the defendant was not guilty of murder.
-- They relied on the evidence that the defendant was provoked by the deceased and was suffering from a mental disorder.
+The defense argued that the appellant had been provoked by the deceased's actions and that he was suffering from an abnormality of mind at the time of the killing, which should be considered as mitigating factors.
 
 **Defendant's Plea**
 
-- Not guilty
+The appellant pleaded not guilty to murder but admitted manslaughter on the basis of provocation.
 
 **Reasoning of Judgement**
 
-- The Court of Final Appeal found that the Court of Appeal had erred in ordering a third retrial.
-- The court held that the interests of justice did not require a third retrial.
-- The court considered the following factors:
-    - The defendant had already been convicted and sentenced to life imprisonment twice.
-    - The defendant had already spent 11 years in custody.
-    - The evidence against the defendant was not overwhelming.
-    - The third retrial would be oppressive to the defendant.
+The Court of Appeal held that the trial judge had erred in failing to direct the jury on the relevance of the psychiatric evidence to the issue of loss of self-control under the defense of provocation. The court found that this misdirection had resulted in the defense of provocation not being fully and fairly placed before the jury, thereby depriving the appellant of a fair trial.
 
-**Sentencing guidelines**
+**Guidelines**
 
-- N/A
+The court considered the principles governing the exercise of discretion to order a retrial, including the interests of justice, the strength of the prosecution case, and the potential impact on the appellant.
 
-**Sentencing / Disposition**
+**Disposition**
 
-- The Court of Final Appeal quashed the order for a third retrial.
-- The defendant was sentenced to manslaughter on the basis of provocation and released from custody.
+The Court of Appeal unanimously allowed the appeal and quashed the conviction. The court further ordered a third retrial for the appellant.
 
 **Point of Dispute**
 
-- The point of dispute was whether the interests of justice required a third retrial.
+The main point of dispute in this case was whether the trial judge's failure to direct the jury on the relevance of the psychiatric evidence to the issue of loss of self-control amounted to a misdirection that deprived the appellant of a fair trial.
 
 **Summary**
 
-- The defendant was convicted of murdering his cohabitee and sentenced to life imprisonment.
-- He appealed his conviction twice, and the Court of Appeal quashed the convictions and ordered retrials.
-- The defendant appealed the order for a third retrial to the Court of Final Appeal.
-- The Court of Final Appeal quashed the order for a third retrial and sentenced the defendant to manslaughter on the basis of provocation.
+The appellant, Mr. Liang Yaoqiang, was convicted of murdering his cohabitee, Ms. Yeung Sau Yu, on September 12, 2009. The conviction went through three trials and appeals, with each higher court quashing the previous conviction due to errors in the proceedings. The case involved issues of evidence admissibility, jury instructions, and the consideration of psychiatric evidence in the defense of diminished responsibility. The Court of Appeal ultimately found that the trial judge's failure to properly instruct the jury on the relevance of psychiatric evidence to the defense of provocation constituted a misdirection that resulted in an unfair trial. The court ordered a third retrial for the appellant, balancing the interests of justice and the need to provide a fair trial with the appellant's rights and circumstances.
 
-**Case usefulness for future references**
+**Principles established**
 
-- This case is useful for future references because it sets out the factors that courts should consider when deciding whether to order a retrial.
-- The case also highlights the importance of the interests of justice in the criminal justice system.
+- The trial judge has a duty to properly instruct the jury on all relevant aspects of the law and evidence in a criminal trial.
+- The defense of provocation must be fully and fairly presented to the jury, including consideration of relevant evidence that may support the defense.
+- The court has the discretion to order a retrial in the interests of justice, taking into account factors such as the strength of the prosecution case, the impact on the appellant, and the need for finality in the proceedings.
+
+**Factors considered**
+
+- The nature of the trial judge's error in failing to direct the jury on the relevance of the psychiatric evidence to the defense of provocation.
+- The potential impact of this error on the jury's verdict.
+- The strength of the prosecution case against the appellant.
+- The appellant's rights to a fair trial and to be free from oppressive or vexatious proceedings.
+- The interests of justice in ensuring that the murder charge against the appellant is ultimately resolved by a jury verdict.
+
+**How this case will be useful for future references**
+
+This case provides guidance on the proper instructions to be given to juries in criminal trials, particularly in relation to the defense of provocation and the consideration of psychiatric evidence. It also highlights the importance of balancing the interests of justice with the rights and circumstances of the appellant when considering whether to order a retrial. This case is relevant to legal practitioners, judges, and researchers interested in criminal law, trial procedure, and the role of expert evidence in criminal trials.
 
 **Keywords**
 
-- Retrial, murder, manslaughter, provocation, mental disorder, interests of justice
+Murder, provocation, diminished responsibility, jury instructions, misdirection, retrial, fair trial, due process
 
 **References**
 
-- (current case), Argument: The third retrial would be oppressive to the defendant.
-Excerpt: "The third retrial would be oppressive to the defendant."
-
-- (current case), Argument: The defendant had already been convicted and sentenced to life imprisonment twice.
-Excerpt: "The defendant had already been convicted and sentenced to life imprisonment twice."
-
-- (current case), Argument: The evidence against the defendant was not overwhelming.
-Excerpt: "The evidence against the defendant was not overwhelming."
-
-- (current case), Argument: The defendant had already spent 11 years in custody.
-Excerpt: "The defendant had already spent 11 years in custody."
-
-- (current case), Argument: The interests of justice did not require a third retrial.
-Excerpt: "The court held that the interests of justice did not require a third retrial."
-
-- (current case), Argument: A third retrial would be oppressive to the defendant.
-Excerpt: "The court considered the following factors:
-    - The defendant had already been convicted and sentenced to life imprisonment twice.
-    - The defendant had already spent 11 years in custody.
-    - The evidence against the defendant was not overwhelming.
-    - The third retrial would be oppressive to the defendant."
-
-- Wong Kam-shing Jackie [2010] 4 HKC 580, Argument: The highest sentence imposed for manslaughter is 16 years.
-Excerpt: "the highest sentence imposed was 16 years"
-
-- Yau Kit-keung [2010] 6 HKC 473, Argument: The highest sentence imposed for manslaughter is 16 years.
-Excerpt: "the highest sentence imposed was 16 years"
+- Trial Judge's failure to draw the jury's attention to the psychiatric evidence and its relevance to the issue of loss of self-control:
+  - (current case)
+  - """In summary, I am persuaded that the applicant should be retried for a fourth time and my decision includes the following considerations: ...  (5)  The length and complexity of a fourth trial.  This is a fairly straightforward case where the issues are well defined."""
+- Importance of considering psychiatric evidence in the defense of provocation:
+  - (current case)
+  - """It is clearly apparent from the highlighted comments of Mr Bruce in his closing address that he made no mention of the psychiatric evidence under the first limb of provocation, and only specifically discussed the psychiatric evidence under the second limb. This approach by the defence gives the impression that a tactical decision may have been made to lay emphasis on the alleged provocative conduct of the deceased, ensuring the impact of it was not lessened by reference to the psychiatric evidence, in order to establish that the applicant was or might have been provoked."""
+- Balancing the interests of justice with the rights and circumstances of the appellant when considering whether to order a retrial:
+  - (current case)
+  - """Exercising afresh the discretion conferred on the Court of Appeal, I cannot be satisfied that the interests of justice require a further retrial.  Indeed I am satisfied that they do not."""
+- Balancing the seriousness of the crime and the rights of the accused:
+  - (current case)
+  - """However, the more often the defendant has to face trial, the greater the ordeal will be for him, and the less fair the criminal justice process will be perceived to be."""
+- Burden of proof lies with the Prosecution:
+  - (current case)
+  - """in this case, in the absence of a special or compelling reason, this was a ‘departure from accepted norms’ sufficient to constitute a substantial and grave injustice."""
+- Defendant’s right to a fair trial is violated when the prosecution suppresses evidence:
+  - HKSAR v Tam Ho Nam (No 2) (2017) 20 HKCFAR 414
+  - """The interests of justice of course include a consideration of an accused’s interests and circumstances. The criminal justice system is there to bring matters to a conclusion without undue delay and without oppression; these are ‘accepted norms’."""
+- Discretion of the Court of Appeal to order a retrial in the interests of justice:
+  - Mok Kin Kau v HKSAR (2008) 11 HKCFAR 1
+  - """The discretion whether or not to order a retrial is found in section 83E(1) of the Criminal Procedure Ordinance (Cap 221). It provides: ‘Where the Court of Appeal allows an appeal against conviction and it appears to the Court of Appeal that the interests of justice so require, it may order the appellant to be retried.’"""
+- Consideration of the strength of the Prosecution's case when deciding whether to order a retrial:
+  - Mok Kin Kau v HKSAR (2008) 11 HKCFAR 1
+  - """Nevertheless, it is difficult to dismiss the fact that the appellant has already served his full sentence for the primary offence.  In his judgment dated 14 March 2001 in HKSAR v Chan Siu Ming, **2** Jones JA described such a situation as ‘the ultimate sanction’ and stated that ‘one should be reluctant to impose it unless the circumstances are very compelling’.  Many might describe as ‘exceptional’ a situation in which a defendant has already served the full sentence for the primary offence and is then ordered to face a retrial, even if it is a second for the primary offence."""
+- Defendant’s interests and circumstances should be considered when deciding whether to order a retrial:
+  - Mok Kin Kau v HKSAR (2008) 11 HKCFAR 1
+  - """In assessing the public interest, a court must take into account the views of the prosecution which is best qualified (and I would add has the duty) to present the views of the public, although it must ultimately be for the court to determine what is in the public interest. The strength of the prosecution case is also a relevant consideration."""
+- The court's discretion to order a retrial is to be exercised judicially:
+  - Mok Kin Kau v HKSAR (2008) 11 HKCFAR 1
+  - """That must be given significant weight is the fact that the accused has already undergone a trial, in particular where the trial is long and complex. This is all the more so when there is involved a second retrial, which means of course the possibility of a third trial for the same offence.  In Mok Kin Kau v HKSAR, **3**the ordering of a second retrial after two concluded trials and appeals, and the serving of the whole sentence, was said to be an ‘unusual course’ and in such a situation, in the absence of a special or compelling reason, this was a ‘departure from accepted norms’ sufficient to constitute a substantial and grave injustice."""
+- The court's discretion to order a retrial is not unfettered:
+  - Ting James Henry v HKSAR (2007) 10 HKCFAR 632
+  - """Whether or not a retrial should be ordered is a matter of discretion. This discretion is usually exercised, as it should be, by the Court of Appeal, relying on their ‘collective sense of justice and common sense.’ And, as was put by Lord Bingham of Cornhill, there must be ‘an informed and dispassionate assessment of how the interests of justice in the widest sense are best served’; it is important to maintain ‘confidence in the efficacy of the criminal justice system.’"""
+- The court should take into account the appellant’s rights and circumstances when deciding whether to order a retrial:
+  - HKSAR v Tam Ho Nam (No 2) (2017) 20 HKCFAR 414
+  - """(1)   Whether or not a retrial should be ordered is a matter of discretion. This discretion is usually exercised, as it should be, by the Court of Appeal, relying on their ‘collective sense of justice and common sense.’ **4**And, as was put by Lord Bingham of Cornhill, there must be ‘an informed and dispassionate assessment of how the interests of justice in the widest sense are best served’; it is important to maintain ‘confidence in the efficacy of the criminal justice system.’"""
+- In exercising its discretion, the court should consider the relevant factors in the particular case:
+  - HKSAR v Tam Ho Nam (No 2) (2017) 20 HKCFAR 414
+  - """Another factor that must be given significant weight is the fact that the accused has already undergone a trial, in particular where the trial is long and complex. This is all the more so when there is involved a second retrial, which means of course the possibility of a third trial for the same offence.  In Mok Kin Kau v HKSAR, **5**the ordering of a second retrial after two concluded trials and appeals, and the serving of the whole sentence, was said to be an ‘unusual course’ and in such a situation, in the absence of a special or compelling reason, this was a ‘departure from accepted norms’ sufficient to constitute a substantial and grave injustice."""

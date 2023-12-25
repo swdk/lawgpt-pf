@@ -20,14 +20,13 @@ continue on his work on the References section, be as DETAIL as possible.
 
 # References section Instruction
 
-Extract arguments from the case, the relevant case and excerpts.
+Extract arguments from the case, for each argument, find the relevant case Reference id and excerpts.
 Ensure that excerpts contain all relevant context needed to interpret them - in other words don't extract small snippets that are missing important context.
-Reference id are in the following format: """**CASE_REFERENCE: Reference id**""". 
-If the case is the current case, state "(current case)".
-Make sure to follow the following formatting Instruction.
+Reference id are wraped inside (**) the following format: ** Reference id ** in the Case document or in the Reference section.
+Make sure to follow the following formatting Instruction. Include prefix such as "Argument", "Reference" or "excerpts"
 
 **References** 
-    - Argument supported by reference
-        - Reference id (Do not include the word CASE_REFERENCE)
-        - excerpts (EXACT sentence from the case information wraped inside triple quote ("""), DO NOT make up or paraphrase) of the case supporting the argument
+    - Argument supported by references
+    - Reference 
+    - excerpts (EXACT sentence from the case information wraped inside triple quote ("""), DO NOT make up or paraphrase) of the case supporting the argument
     
