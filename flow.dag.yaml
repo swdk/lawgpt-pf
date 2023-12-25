@@ -638,21 +638,6 @@ nodes:
     path: find_references.py
   inputs:
     input1: ${inputs.text}
-- name: find_reference_prompt
-  type: prompt
-  source:
-    type: code
-    path: find_reference_prompt.jinja2
-  inputs:
-    text: ${replace_references_str.output}
-- name: gemini_find_reference
-  type: python
-  source:
-    type: code
-    path: gemini_find_reference.py
-  inputs:
-    conn: gemini
-    prompt: ${find_reference_prompt.output}
 - name: summary_prompt
   type: prompt
   source:
@@ -660,7 +645,6 @@ nodes:
     path: summary_prompt.jinja2
   inputs:
     text: ${replace_references_str.output}
-    detected_references: ${gemini_find_reference.output}
 - name: gemini_summary_llm
   type: python
   source:
@@ -676,7 +660,7 @@ nodes:
     path: continue_prompt.jinja2
   inputs:
     current_summary: ${gemini_summary_llm.output}
-    previous_summary_prompy: ${summary_prompt.output}
+    previous_summary_prompt: ${summary_prompt.output}
 - name: gemini_reference_usefulness_llm
   type: python
   source:

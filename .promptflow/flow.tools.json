@@ -134,11 +134,6 @@
           "type": [
             "string"
           ]
-        },
-        "detected_references": {
-          "type": [
-            "string"
-          ]
         }
       },
       "source": "summary_prompt.jinja2"
@@ -285,7 +280,7 @@
     "continue_prompt.jinja2": {
       "type": "prompt",
       "inputs": {
-        "previous_summary_prompy": {
+        "previous_summary_prompt": {
           "type": [
             "string"
           ]

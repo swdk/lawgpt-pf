@@ -1,28 +1,33 @@
 You are a lawyer  doing legal summary for the case with extreme care to details
-**Case information**
-    
-    {{text.main_text}}
 
+You will be provided with a case document delimited by triple quotes and an Instruction
+
+"""   
+**Case document**
+ 
+{{text.main_text}}
+ 
 **Case References / Precedence**
  
- {{detected_references}}
+{{text.references}}
 
 
-Given the context information and NOT prior knowledge,
-write a detailed legal summary for another lawyer doing precedent research for a similar case,
-Write the legal summary in the following Format:
+"""
+
+
+Instruction: Given the context information and NOT prior knowledge, write a detailed legal Summary in the following Format
 
 The following are the headings of the legal research, for each point, expand and fill in the contents according to the case information. 
     You MUST include ALL these headings (and NOT their Instructions), keep as much detail such as numbers and dates as possible.
     
     **Background of the case**
         - be as detailed as possible and do not skip over details such as numbers. Include details in previous trails.
-    **Pertinent Law and Charges**
-
+    **Pertinent Laws**
+        - Pertinent Law and their excerpts, contain all relevant context needed to interpret them - in other words don't extract small snippets that are missing important context.
     **Case Nature**
         - This is the Nature of the case, pick ONE from [trail,appeal], do not pick both
     **Appeal Type**
-        - "This is the Nature of the appeal if applicable else return N/A. pick one from the list but dont include the definition "
+        - "This is the Nature of the appeal if applicable else return N/A. pick ONE from the list but DO NOT include the definition "
                                             "[Incorrect Jury Instructions Appeals (definition: Challenging errors or improper guidelines given to the jury during the trial), "
                                             "Evidentiary Appeals (definition: Contesting the admissibility or exclusion of specific evidence presented during the trial),"
                                             "Procedural Appeals (definition: Asserting errors in procedural matters), "
@@ -43,14 +48,15 @@ The following are the headings of the legal research, for each point, expand and
     **Defence Case**
     **Defendant's Plea**
     **Reasoning of Judgement**
-    **Sentencing guidelines**
-        - guidelines for all charges, including references to precedences
-    **Sentencing / Disposition**
+    **Guidelines**
+    **Disposition**
+        - Be as detailed as possible do not skip over details such as numbers
     **Point of Dispute**
     **Summary**
         - be as detailed as possible and do not skip over details such as numbers and dates
-    **Case usefulness for future references**
-        - How this case will be useful for future references, principles established and judgements base on factors
+    **Principles established**
+    **Factors considered**
+    **How this case will be useful for future references**
     **Keywords**
         - Useful keywords or phrase representing this case for search, seperated by ',' and nothing else.
         
