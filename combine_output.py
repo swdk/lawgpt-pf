@@ -5,5 +5,5 @@ from promptflow import tool
 # Adding type to arguments and return value will help the system show the types properly
 # Please update the function name/signature per need
 @tool
-def get_first_and_last_paragraph_tool(input1: str) -> str:
-    return input1
+def my_python_tool(input1: str,  input2: str) -> str:
+    return input1 + "\n\n" + input2

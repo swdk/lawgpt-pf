@@ -297,6 +297,73 @@
         }
       },
       "source": "continue_prompt.jinja2"
+    },
+    "combine_output.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        },
+        "input2": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "combine_output.py",
+      "function": "my_python_tool"
+    },
+    "gemini_find_reference.py": {
+      "type": "python",
+      "inputs": {
+        "conn": {
+          "type": [
+            "CustomConnection"
+          ]
+        },
+        "prompt": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "gemini_find_reference.py",
+      "function": "my_python_tool"
+    },
+    "fact_checking_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "case_text": {
+          "type": [
+            "string"
+          ]
+        },
+        "previous_references": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "fact_checking_prompt.jinja2"
+    },
+    "gemini_fact_checking_llm.py": {
+      "type": "python",
+      "inputs": {
+        "conn": {
+          "type": [
+            "CustomConnection"
+          ]
+        },
+        "prompt": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "gemini_fact_checking_llm.py",
+      "function": "my_python_tool"
     }
   }
 }

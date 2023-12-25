@@ -629,7 +629,7 @@ inputs:
 outputs:
   output_prompt:
     type: string
-    reference: ${gemini_continue_llm.output}
+    reference: ${combine_output.output}
 nodes:
 - name: replace_references_str
   type: python
@@ -645,17 +645,14 @@ nodes:
     path: find_reference_prompt.jinja2
   inputs:
     text: ${replace_references_str.output}
-- name: find_reference_llm
-  type: llm
+- name: gemini_find_reference
+  type: python
   source:
     type: code
-    path: find_reference_llm.jinja2
+    path: gemini_find_reference.py
   inputs:
-    model: gpt-3.5-turbo
-    question: ${find_reference_prompt.output}
-    temperature: 0
-  connection: open_ai_conenction
-  api: chat
+    conn: gemini
+    prompt: ${find_reference_prompt.output}
 - name: summary_prompt
   type: prompt
   source:
@@ -663,29 +660,7 @@ nodes:
     path: summary_prompt.jinja2
   inputs:
     text: ${replace_references_str.output}
-    detected_references: ${find_reference_llm.output}
-- name: summary
-  type: llm
-  source:
-    type: code
-    path: summary.jinja2
-  inputs:
-    model: gpt-3.5-turbo-16k
-    temperature: 0
-    question: ""
-  connection: open_ai_conenction
-  api: chat
-- name: final_check
-  type: llm
-  source:
-    type: code
-    path: final_check.jinja2
-  inputs:
-    model: gpt-3.5-turbo
-    temperature: 0
-    question: ${summary.output}
-  connection: open_ai_conenction
-  api: chat
+    detected_references: ${gemini_find_reference.output}
 - name: gemini_summary_llm
   type: python
   source:
@@ -694,15 +669,7 @@ nodes:
   inputs:
     input1: ${summary_prompt.output}
     conn: gemini
-- name: gemini_continue_llm
-  type: python
-  source:
-    type: code
-    path: gemini_continue_llm.py
-  inputs:
-    continue_prompt: ${continue_prompt.output}
-    conn: gemini
-- name: continue_prompt
+- name: reference_usefulness_prompt
   type: prompt
   source:
     type: code
@@ -710,3 +677,19 @@ nodes:
   inputs:
     current_summary: ${gemini_summary_llm.output}
     previous_summary_prompy: ${summary_prompt.output}
+- name: gemini_reference_usefulness_llm
+  type: python
+  source:
+    type: code
+    path: gemini_continue_llm.py
+  inputs:
+    continue_prompt: ${reference_usefulness_prompt.output}
+    conn: gemini
+- name: combine_output
+  type: python
+  source:
+    type: code
+    path: combine_output.py
+  inputs:
+    input1: ${gemini_summary_llm.output}
+    input2: ${gemini_reference_usefulness_llm.output}

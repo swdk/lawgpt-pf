@@ -4,6 +4,17 @@ import re
 # The inputs section will change based on the arguments of the tool function, after you save the code
 # Adding type to arguments and return value will help the system show the types properly
 # Please update the function name/signature per need
+
+
+# import nltk
+# nltk.download('punkt')
+
+# def find_sentences_with_word(text, word):
+#     sentences = nltk.sent_tokenize(text)
+#     result_sentences = [sentence for sentence in sentences if word in nltk.word_tokenize(sentence)]
+#     return result_sentences
+
+
 @tool
 def find_references(input1: str) -> str:
     main_text, reference_text = re.split(r'\n\s*\n(?=\[\d{1,3}\])', input1, maxsplit=1)
@@ -30,6 +41,6 @@ def find_references(input1: str) -> str:
     main_text = re.sub(r'\[(\d{1,3})\]-\[(\d{1,3})\]', lambda match: ', '.join([f'[{i}]' for i in range(int(match.group(1)), int(match.group(2)) + 1)]), main_text)
 
     # Replace references in the main text
-    main_text = re.sub(r'\[(\d{1,3})\]', lambda match: f' (reference: {reference_dict.get(match.group(1), "")})', main_text)
-
-    return {'main_text':main_text, 'reference_dict':reference_dict}
+    main_text = re.sub(r'\[(\d{1,3})\]', lambda match: f' [reference: {reference_dict.get(match.group(1), "")}]', main_text)
+ 
+    return {'main_text':main_text, 'references': '\n'.join([r.replace(';', '\n') for r in reference_dict.values()])}

@@ -12,7 +12,8 @@ def my_python_tool(input1: str, conn: CustomConnection) -> str:
     model = genai.GenerativeModel('gemini-pro')
     
     response = model.generate_content(input1, generation_config={
-        "max_output_tokens": 2048
+        # "max_output_tokens": 2048, 
+        # "temperature": 1 
          }, 
                                       safety_settings=[
         {

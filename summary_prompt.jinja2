@@ -1,49 +1,58 @@
 You are a lawyer  doing legal summary for the case with extreme care to details
-Case information:
+**Case information**
     
     {{text.main_text}}
 
-Case References / Precedence:
+**Case References / Precedence**
  
  {{detected_references}}
 
-Given the context information and not prior knowledge,
-write a detailed legal summary
-for another lawyer doing president research for a similar case,
+
+Given the context information and NOT prior knowledge,
+write a detailed legal summary for another lawyer doing precedent research for a similar case,
 Write the legal summary in the following Format:
 
-The following are the headings of the legal research, for each point, expand and fill in contents according to the case information. 
-    Keep all headings and their numbering.You MUST include ALL these headings
+The following are the headings of the legal research, for each point, expand and fill in the contents according to the case information. 
+    You MUST include ALL these headings (and NOT their Instructions), keep as much detail such as numbers and dates as possible.
     
-    - Background of the case, be as detail as possible and do not skip over details such as numbers. Include details in previous trails.
-    - Pertinent Law and Charges
-    - Case Nature, This is the Nature of the case, pick ONE from [trail,appeal], do not pick both
-    - Appeal Type, "This is the Nature of the appeal if applicable else return N/A. pick one from the list but dont include the definition "
-                                            "[Incorrect Jury Instructions Appeals (defination: Challenging errors or improper guidelines given to the jury during the trial), "
-                                            "Evidentiary Appeals (defination: Contesting the admissibility or exclusion of specific evidence presented during the trial),"
-                                            "Procedural Appeals (defination: Asserting errors in procedural matters), "
-                                            "Sentencing Appeals (defination: Contesting the appropriateness or legality of the imposed sentence), "
-                                            "Newly Discovered Evidence Appeals (defination:  Introducing new evidence that was not available during the trial, which could potentially impact the outcome), "
-                                            "Legal Error Appeals (defination: Challenging errors of law made by the trial court, such as misinterpretation or misapplication of statutes, regulations, or legal precedents), "
-                                            "Inadequate Defense Appeals (defination: Challenging the effectiveness or competence of the defense attorney during the trial), "
-                                            "Plea Negotiation Appeals (defination: Contesting the validity or fairness of a plea agreement reached between the defendant and the prosecution), "
-                                            "Discretionary Appeals (defination:Challenging the lower or appellate court's abuse of discretion in making a particular decision)]"
-    - Newton hearing:  N/A if not available
-    - Evidences 
-    - Prosecution Case 
-    - Defence Case
-    - Defendant's Plea
-    - Sentencing guidelines for all charges,  include references to precedences
-    - Point of Dispute
-    - Reasoning of Judgement  
-    - Sentences for each charge
-    - Summary:  be as detail as possible and do not skip over details such as numbers and dates
-    - Case usefulness for future references
-    - References: (Precedence) and arguments: key value pairs of all precedence mentioned in the case with case number followed by their arguments that it was supporting. Include ALL references in the Case References / Precedence section and their arguments that it was supporting and DO NOT skip over any of the references.
-        - examples :"- [2001] UKPC 19: In B (a Child) v R, Lord Bingham of Cornhill emphasized the importance of "an informed and dispassionate assessment of how the interests of justice in the widest sense are best served" and that it is important to maintain "confidence in the efficacy of the criminal justice system." This argument was used to support the view that the interests of justice required a third retrial."
-                    "- [2017] 20 HKCFAR 414: In HKSAR v Tam Ho Nam (No 2), the Court of Appeal reiterated that "the interests of justice require all relevant factors, both for and against a retrial, to be taken into account" and that "such factors will not only vary from case to case, but their relative importance and weight will also be different in any given case." This argument was used to support the view that the Court of Appeal should re-exercise the discretion to order a retrial, taking into account all relevant factors."
-                    "- [2018] 21 HKCFAR 35: In Secretary for Justice v Wong Chi Fung, the Court of Appeal held that "as a general principle, the relative weight which the Court of Appeal ‘ascribes to each relevant factor’ is a matter within its discretion and it is not open to the Court of Final Appeal to seek to ascribe a different weight." This argument was used to support the view that this Court should not interfere with the Court of Appeal’s exercise of discretion in determining the weight to be given to each relevant factor."
-    - Keywords: Useful keywords or phrase representing this case for search, seperated by ',' and nothing else.
+    **Background of the case**
+        - be as detailed as possible and do not skip over details such as numbers. Include details in previous trails.
+    **Pertinent Law and Charges**
 
+    **Case Nature**
+        - This is the Nature of the case, pick ONE from [trail,appeal], do not pick both
+    **Appeal Type**
+        - "This is the Nature of the appeal if applicable else return N/A. pick one from the list but dont include the definition "
+                                            "[Incorrect Jury Instructions Appeals (definition: Challenging errors or improper guidelines given to the jury during the trial), "
+                                            "Evidentiary Appeals (definition: Contesting the admissibility or exclusion of specific evidence presented during the trial),"
+                                            "Procedural Appeals (definition: Asserting errors in procedural matters), "
+                                            "Sentencing Appeals (definition: Contesting the appropriateness or legality of the imposed sentence), "
+                                            "Newly Discovered Evidence Appeals (definition:  Introducing new evidence that was not available during the trial, which could potentially impact the outcome), "
+                                            "Legal Error Appeals (definition: Challenging errors of law made by the trial court, such as misinterpretation or misapplication of statutes, regulations, or legal precedents), "
+                                            "Inadequate Defense Appeals (definition: Challenging the effectiveness or competence of the defense attorney during the trial), "
+                                            "Plea Negotiation Appeals (definition: Contesting the validity or fairness of a plea agreement reached between the defendant and the prosecution), "
+                                            "Discretionary Appeals (definition: Challenging the lower or appellate court's abuse of discretion in making a particular decision)]"
+    **Newton hearing**
+      - N/A if not available
+    **Evidences** 
+         - Prosecution:
+            - Evidence fromt the Prosecution
+        - Defense:
+            - Evidence fromt the Defense
+    **Prosecution Case**
+    **Defence Case**
+    **Defendant's Plea**
+    **Reasoning of Judgement**
+    **Sentencing guidelines**
+        - guidelines for all charges, including references to precedences
+    **Sentencing / Disposition**
+    **Point of Dispute**
+    **Summary**
+        - be as detailed as possible and do not skip over details such as numbers and dates
+    **Case usefulness for future references**
+        - How this case will be useful for future references, principles established and judgements base on factors
+    **Keywords**
+        - Useful keywords or phrase representing this case for search, seperated by ',' and nothing else.
+        
 Summary:
 
