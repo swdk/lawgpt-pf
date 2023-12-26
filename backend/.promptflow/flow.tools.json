@@ -1,0 +1,100 @@
+{
+  "package": {},
+  "code": {
+    "find_references.py": {
+      "type": "python",
+      "inputs": {
+        "main_text": {
+          "type": [
+            "string"
+          ]
+        },
+        "reference_text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "find_references.py",
+      "function": "find_references"
+    },
+    "summary_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "summary_prompt.jinja2"
+    },
+    "gemini_llm.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        },
+        "conn": {
+          "type": [
+            "CustomConnection"
+          ]
+        }
+      },
+      "source": "gemini_llm.py",
+      "function": "my_python_tool"
+    },
+    "continue_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "previous_summary_prompt": {
+          "type": [
+            "string"
+          ]
+        },
+        "current_summary": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "continue_prompt.jinja2"
+    },
+    "gemini_continue_llm.py": {
+      "type": "python",
+      "inputs": {
+        "conn": {
+          "type": [
+            "CustomConnection"
+          ]
+        },
+        "continue_prompt": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "gemini_continue_llm.py",
+      "function": "my_python_tool"
+    },
+    "combine_output.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        },
+        "input2": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "combine_output.py",
+      "function": "my_python_tool"
+    }
+  }
+}

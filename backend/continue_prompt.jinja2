@@ -1,0 +1,32 @@
+You are a lawyer doing legal summary for the case with extreme care to details,
+your assistant was given the following Instructions delimited by triple quotes to write a summary.
+
+"""
+
+### Previous summary Instructions
+
+{{previous_summary_prompt}}
+
+### Current Summary:
+
+{{current_summary}}
+
+"""
+
+Instruction: 
+
+Continue on his work on any missing sections as requested from previous summary Instructions, if all sections are presented, 
+continue on his work on the References section, be as DETAIL as possible. 
+
+# References section Instruction
+
+Extract arguments from the case, for each argument, find the relevant case Reference id and excerpts.
+Ensure that excerpts contain all relevant context needed to interpret them - in other words don't extract small snippets that are missing important context.
+Reference id are wraped inside (**) the following format: ** Reference id ** in the Case document or in the Reference section.
+Make sure to follow the following formatting Instruction. Include prefix such as "Argument", "Reference" or "excerpts"
+
+**References** 
+    - Argument supported by references
+    - Reference 
+    - excerpts (EXACT sentence from the case information wraped inside triple quote ("""), DO NOT make up or paraphrase) of the case supporting the argument
+    
