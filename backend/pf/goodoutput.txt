@@ -306,3 +306,125 @@ Murder, provocation, diminished responsibility, jury instructions, misdirection,
 - In exercising its discretion, the court should consider the relevant factors in the particular case:
   - HKSAR v Tam Ho Nam (No 2) (2017) 20 HKCFAR 414
   - """Another factor that must be given significant weight is the fact that the accused has already undergone a trial, in particular where the trial is long and complex. This is all the more so when there is involved a second retrial, which means of course the possibility of a third trial for the same offence.  In Mok Kin Kau v HKSAR, **5**the ordering of a second retrial after two concluded trials and appeals, and the serving of the whole sentence, was said to be an ‘unusual course’ and in such a situation, in the absence of a special or compelling reason, this was a ‘departure from accepted norms’ sufficient to constitute a substantial and grave injustice."""
+
+
+
+  ---------------------------
+
+
+  **Background of the case**
+
+- The appellant was tried and convicted three times after trial of murdering his cohabitee in 2009.
+- On each occasion, the conviction was overturned on appeal - twice by the Court of Appeal and once by the Court of Final Appeal (CFA) - and a retrial was ordered.
+- The last conviction of the appellant for murder was on 26 April 2018 and was unanimously quashed by the Court of Appeal on 20 November 2020. 
+- By a majority decision (Macrae VP and Zervos JA, McWalters JA dissenting), the Court of Appeal ordered a third retrial.
+- The Appeal Committee granted leave to appeal against the order of retrial.
+
+
+**Pertinent Laws**
+- Section 4 of the Homicide Ordinance (Cap 339)
+- Article 11(2)(c) of the Hong Kong Bill of Rights
+
+**Case Nature**
+- Appeal.
+
+**Appeal Type**
+- Legal Error Appeals (Challenging errors of law made by the trial court, such as misinterpretation or misapplication of statutes, regulations, or legal precedents).
+
+**Newton hearing**
+- N/A.
+
+**Evidence from Prosecution**
+- N/A.
+
+**Evidence from Defense**
+- N/A.
+
+**Prosecution Case**
+- The appellant killed the deceased on 12 September 2009 in the flat where they cohabited, and he had done so by chopping her with a knife approximately 213 times.
+- Impermissible hearsay evidence was adduced at trial, with no objection from defence counsel.
+- The appellant's first conviction was quashed because the trial judge failed to deal accurately and adequately with the phrase "do as he did" in section 4 of the Homicide Ordinance.
+- The appellant was convicted again at the second trial, but the Court of Appeal refused leave to appeal against the conviction.
+- The appellant's second conviction was quashed because the trial judge's directions to the jury on the issue of provocation were inadequate.
+- At the third trial, the appellant, for the first time, relied on the defense of diminished responsibility, supported by newly obtained psychiatric evidence.
+- The trial judge failed to draw the jury's attention to the psychiatric evidence and its relevance to the issue of whether the appellant lost or might have lost his self-control.
+- The appellant's third conviction was quashed because of the trial judge's misdirection on the issue of provocation.
+
+
+**Defense Case**
+- The appellant denied the charge of murder but was prepared to plead guilty to manslaughter by reason of provocation.
+- The defense of provocation was based on two video records of interview made by the police shortly after the killing, the voluntariness of which was admitted, as well as the appellant's own evidence at trial.
+- The appellant claimed that the deceased was having an affair with another man and, although he was not sure about it at the time, he had a strong suspicion about the deceased's infidelity.
+- Used condoms were on several occasions found by the appellant in the rubbish bin at the rear staircase outside the flat, and on the last time that happened, the appellant confronted the deceased with a used condom which he found in the rubbish bin, which he said was still warm.
+- That led to heated quarrels between the two that same evening and the following morning during which, according to the appellant, the deceased taunted him about becoming a garbage collector, his poor performance as a sexual partner, and that he was not his daughter's father and she had been fathered by a man who had an affair with his ex-wife.
+- According to the deceased's ex-husband, the deceased had called him on his mobile at 5:40 AM and told him that the appellant had gone crazy, taken off all his clothing, and attempted to jump off the building, and she was scared.
+- According to the appellant, after that telephone call, the deceased twice thrust the used condom into his face near his mouth, asking him to eat it so that he would stop asking her about her new boyfriend.
+- The appellant claimed that he lost control and his mind went blank. He fetched a knife from the kitchen, attacked the deceased frenziedly and killed her.
+- At the third trial, the defense of diminished responsibility, supported by a psychiatric report prepared by Dr Wong Chung Kwong, was also run.
+- Dr Wong opined that at the time of the killing, the appellant's abnormality of mind due to a combination of two psychiatric disorders, namely a Major Depressive Disorder ("MDD") of mild to moderate severity, and Acute Dissociative Reactions to Stressful Events ("ADR") which was a brief, acute and serious disorder, coupled with four underlying factors, namely, hypoglycemia, sleep deprivation, alcohol, and emotional memory of his ex-wife's adultery, severely compromised his mental capacity to think and judge rationally, and it impaired his ability to control his emotion, impulse and behavior.
+- Dr Oliver Chan disagreed with Dr Wong's finding that the appellant had been suffering from MDD at the time of the killing.
+- He found that he had been suffering from an adjustment disorder and accepted that the appellant's discovery of the deceased's infidelity had been a major life stressor in the two months preceding the killing.
+- Dr Chan took the view that an adjustment disorder might be considered as an abnormality of mind, but considered that the appellant's condition did not substantially impair his mental responsibility for his act, and could not provide a causal explanation for the killing.
+
+**Defendant's Plea**
+- The appellant denied the charge of murder but was prepared to plead guilty to manslaughter by reason of provocation.
+
+**Point of Dispute**
+- Whether the Court of Appeal erred in ordering a third retrial.
+
+**Guidelines**
+- The principles governing the exercise of the statutory discretion to order a retrial are well established.
+- Whether or not a retrial should be ordered is a matter of discretion.
+- The discretion to order a retrial depends entirely on what justice requires.
+- The interests of justice include a consideration of an accused's interests and circumstances.
+- The interests of justice also include the interest of the public in seeing those who are guilty of serious crimes brought to justice and not escape merely because of a technical error in the conduct of a trial or in the summing up to a jury.
+- The strength of the prosecution case is also a relevant consideration.
+
+**Disposition**
+- The CFA unanimously allowed the appeal, quashed the order for a third retrial, entered a conviction for manslaughter on the basis of provocation and sentenced the appellant to such sentence that would allow for his immediate release from custody.
+
+**Summary**
+- The appellant was convicted of murdering his cohabitee in 2009.
+- His conviction was overturned on appeal three times and a retrial was ordered each time.
+- The Court of Appeal ordered a third retrial but the CFA quashed the order, entered a conviction for manslaughter on the basis of provocation and sentenced the appellant to time served.
+
+**Principles established**
+- The discretion to order a retrial depends entirely on what justice requires.
+- The interests of justice include a consideration of an accused's interests and circumstances as well as the interest of the public in seeing those who are guilty of serious crimes brought to justice.
+- The strength of the prosecution case is also a relevant consideration.
+
+**Factors considered**
+- The appellant had already undergone three trials and three appeals.
+- The appellant had been remanded in custody for almost twelve years.
+- The prosecution case was strong.
+
+**How this case will be useful for future references**
+- This case is an example of the CFA exercising its discretion to order a retrial.
+- The case also discusses the factors that are relevant to the exercise of this discretion.
+
+**Keywords**
+Retrial, murder, manslaughter, provocation, diminished responsibility, abuse of discretion.
+
+**References**
+
+**Argument: The majority of the Court of Appeal erred in taking into account the conduct of the appellant's legal representatives in his previous trials, particularly the third trial, as factors which were relevant and justified a further retrial.**
+
+**Reference:** R v Davis (Iain Lawrence) [2011] EWCA Crim 2156; Andrew John Hawkins (No 3) (1994) 76 A Crim R 47; Shane Michael Martin (No 4) (1999) 105 A Crim R 390
+
+**Excerpts:**
+
+"""As a matter of principle, there is no justification for excluding from the Court of Appeal’s consideration the conduct of an accused’s legal representatives."""
+
+**Reference:** HKSAR v Chu Chi Wah FAMC 58/2010, 2 November 2010
+
+**Excerpts:**
+
+"""A lapse of time of some twelve years would not in itself forbid a further retrial."""
+
+**Argument: A lapse of time amounting to a breach of the right to a fair trial within a reasonable time does not per se render an otherwise fair trial and a resulting conviction unlawful.**
+
+**Reference:** Attorney General’s Reference (No 2 of 2001) [2004] 2 AC 72; Henworth v The United Kingdom (2005) 40 EHRR 33; Vlad v Romania (2014) 59 EHRR 13
+
+**Excerpts:**
+
+"""A breach of the reasonable time requirement would only entitle the convicted person to remedies such as a reduction in penalty and payment of compensation."""
