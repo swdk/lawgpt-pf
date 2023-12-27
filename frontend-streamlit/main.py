@@ -427,7 +427,7 @@ reference = st.text_area("References", """
 
 def test_api_connection():
     with st.spinner('Loading...'):
-        response = requests.get("http://localhost:5001/health").json()
+        response = requests.get("http://backend:5001/health").json()
         if response.get('status') != 'ok':
             return 'error'
     return response
@@ -436,7 +436,7 @@ def test_api_connection():
 def load_response_from_api(case, reference):
     with st.spinner('Loading...'):
         response = requests.post(
-            "http://localhost:5001/analyseCase", json={'case': case, 'reference': reference}).json()
+            "http://backend:5001/analyseCase", json={'case': case, 'reference': reference}).json()
         if response.get('status') != 'ok':
             return 'error'
     return response.get('result')

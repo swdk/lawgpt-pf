@@ -9,7 +9,9 @@ COPY * /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # define the port number the container should expose
-EXPOSE 5001
+EXPOSE 8501
 
-# run the command
-CMD ["python", "./main.py"]
+# run the comma"nd
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+
+ENTRYPOINT ["streamlit", "run", "main.py"]

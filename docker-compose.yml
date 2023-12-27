@@ -1,0 +1,25 @@
+version: "3"
+services:
+  frontend:
+    # image: test/frontend
+    build: ./frontend-streamlit
+    command: streamlit run main.py
+    depends_on:
+      - backend
+    ports:
+      - 8501:8501
+    volumes:
+      - ./frontend-streamlit:/app
+  backend:
+    # image: test/backend
+    build: ./backend
+    command: python main.py
+    ports:
+      - 5001:5001
+    environment:
+      - DEBUG=True   # set an env var for flask
+    volumes:
+      - ./backend:/app
+volumes:
+  esdata1:
+    driver: local

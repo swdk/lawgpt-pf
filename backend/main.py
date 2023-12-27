@@ -44,27 +44,21 @@ def handle_error(e):
 @app.route("/health", methods=["GET"])
 def health():
     """Check if the runtime is alive."""
-    return {"status": "ok"}
+    return {"status": "ok", "result": "heheh"}
 
 
 @app.route("/analyseCase", methods=["POST"])
 def analyseCase():
     """process a flow request in the runtime."""
     raw_data = request.get_data()
-    logger.info(f"Start loading request data '{raw_data}'.")
+    # logger.info(f"Start loading request data '{raw_data}'.")
     data = json.loads(raw_data)
-    logger.info(f"Start loading request data '{data}'.")
-
-#     data = dict({'text': """
-
-
-#
-# """, 'reference': ''})
+    # logger.info(f"Start loading request data '{data}'.")
 
     # configure flow contexts, create a new context object for each request to make sure they are thread safe.
     f.context = FlowContext()
     result_dict = f(**data)
-    print(result_dict)
+    # print(result_dict)
     # Note: if specified streaming=True in the flow context, the result will be a generator
     # reference promptflow._sdk._serving.response_creator.ResponseCreator on how to handle it in app.
     # return jsonify(result_dict)
@@ -76,5 +70,4 @@ def create_app(**kwargs):
 
 
 if __name__ == "__main__":
-    # test this with curl -X POST http://0.0.0.0:5000/score --header "Content-Type: application/json" --data '{"flow_input": "some_flow_input", "node_input": "some_node_input"}'  # noqa: E501
     create_app().run(debug=True, host='0.0.0.0', port=5001)
