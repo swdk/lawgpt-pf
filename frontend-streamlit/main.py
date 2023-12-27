@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-
+import requests
 st.set_page_config(
     page_title="Precedent Summariser",
     page_icon="⚖️",
@@ -19,8 +19,9 @@ reference = st.text_area("References", "")
 
 def load_response_from_api():
     with st.spinner('Loading...'):
-        time.sleep(5)
-    response = f'You wrote {len(case)}, {len(reference)} characters.'
+        response = requests.get("http://localhost:8888/health").json()
+        if response.get('status') != 'ok':
+            return 'error'
     return response
 
 
