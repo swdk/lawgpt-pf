@@ -18,6 +18,7 @@ services:
       - 5001:5001
     environment:
       - DEBUG=True   # set an env var for flask
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
     volumes:
       - ./backend:/app
 volumes:

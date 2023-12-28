@@ -2,7 +2,7 @@ $schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
 environment:
   python_requirements_txt: requirements.txt
 inputs:
-  text:
+  case:
     type: string
     default: >
       
@@ -640,7 +640,7 @@ nodes:
     type: code
     path: find_references.py
   inputs:
-    main_text: ${inputs.text}
+    main_text: ${inputs.case}
     reference_text: ${inputs.reference}
 - name: summary_prompt
   type: prompt

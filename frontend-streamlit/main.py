@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
+import logging
 
-
+logger = logging.getLogger(st.__name__)
 st.set_page_config(
     page_title="Precedent Summariser",
     page_icon="⚖️",
@@ -422,7 +423,8 @@ reference = st.text_area("References", """
 
 # [72] R v Yu Wing-sze CACC 372/1995, 15 November 1995; HKSAR v Tam Shu-kin CACC 444/2004, 13 May 2005; HKSAR v Yiu Kam‑tin CACC 510/2004, 1 June 2005; HKSAR v Lau Bo‑ki CACC 412/2005, 9 November 2007; HKSAR v Lim Khi‑chong CACC 159/2007, 9 November 2007; HKSAR v Liu Chui-fa HCCC 8/2012, 13 August 2012; HKSAR v Yeung Ki HCCC 242/2013, 14 March 2014; HKSAR v Chen Peng HCCC 115/2016, 20 June 2018; HKSAR v Francisco Reynaldo [2000] 3 HKLRD 688; HKSAR v Wong Kam‑shing Jackie [2010] 4 HKC 580; HKSAR v Yau Kit‑keung [2010] 6 HKC 473.
 
-# [73] HKSAR v Lau Bo‑ki, [11], a case of total denial of responsibility for the killing.""")
+# [73] HKSAR v Lau Bo‑ki, [11], a case of total denial of responsibility for the killing.
+                         """)
 
 
 def test_api_connection():
@@ -437,7 +439,9 @@ def load_response_from_api(case, reference):
     with st.spinner('Loading...'):
         response = requests.post(
             "http://backend:5001/analyseCase", json={'case': case, 'reference': reference}).json()
+
         if response.get('status') != 'ok':
+            logger.error(response)
             return 'error'
     return response.get('result')
 
@@ -449,3 +453,4 @@ if st.button('Test conenction'):
 if st.button('Analyse'):
     response = load_response_from_api(case, reference)
     st.write(response)
+    

@@ -3,7 +3,7 @@ FROM python:3.10.8
 # set a directory for the app
 WORKDIR app
 
-COPY * /app/
+COPY . /app/
 
 # install dependencies
 RUN pip install --no-cache-dir -r requirements.txt

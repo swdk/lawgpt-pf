@@ -1,9 +1,10 @@
 import json
 import logging
+import os
 
 from flask import Flask, jsonify, request
 from promptflow import load_flow
-from promptflow.connections import AzureOpenAIConnection
+from promptflow.connections import  CustomConnection
 from promptflow.entities import FlowContext
 from promptflow.exceptions import SystemErrorException, UserErrorException
 
@@ -56,7 +57,14 @@ def analyseCase():
     # logger.info(f"Start loading request data '{data}'.")
 
     # configure flow contexts, create a new context object for each request to make sure they are thread safe.
-    f.context = FlowContext()
+    connection_obj = CustomConnection(
+        name="gemini", 
+        secrets={"GEMINI_API_KEY":os.environ["GEMINI_API_KEY"]}
+    )
+    
+    
+    f.context = FlowContext(connections={"gemini_summary_llm":{"conn":connection_obj}, "gemini_reference_usefulness_llm":{"conn":connection_obj}})
+
     result_dict = f(**data)
     # print(result_dict)
     # Note: if specified streaming=True in the flow context, the result will be a generator
