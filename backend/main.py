@@ -65,7 +65,7 @@ def analyseCase():
     )
 
     f.context = FlowContext(connections={"gemini_summary_llm": {"conn": custom_connnection},
-                                         "gemini_reference_usefulness_llm": {"conn": custom_connnection},
+                                         #  "gemini_reference_usefulness_llm": {"conn": custom_connnection},
                                          "create_faiss_index": {"connection": openai_connnection},
                                          "find_context": {"connection": openai_connnection}})
 
@@ -73,7 +73,7 @@ def analyseCase():
     # Note: if specified streaming=True in the flow context, the result will be a generator
     # reference promptflow._sdk._serving.response_creator.ResponseCreator on how to handle it in app.
     # return jsonify(result_dict)
-    return {"status": "ok", "result": result_dict["output_prompt"]}
+    return {"status": "ok", "result": result_dict}
 
 
 def create_app(**kwargs):

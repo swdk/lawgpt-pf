@@ -630,9 +630,12 @@ inputs:
     type: string
     default: ""
 outputs:
-  output_prompt:
+  summary_string:
     type: string
-    reference: ${combine_output.output}
+    reference: ${gemini_summary_llm.output}
+  reference_dict:
+    type: string
+    reference: ${find_context.output}
 nodes:
 - name: replace_references_str
   type: python
@@ -657,31 +660,6 @@ nodes:
   inputs:
     input1: ${summary_prompt.output}
     conn: gemini
-- name: reference_usefulness_prompt
-  type: prompt
-  source:
-    type: code
-    path: continue_prompt.jinja2
-  inputs:
-    current_summary: ${gemini_summary_llm.output}
-    previous_summary_prompt: ${summary_prompt.output}
-- name: gemini_reference_usefulness_llm
-  type: python
-  source:
-    type: code
-    path: gemini_continue_llm.py
-  inputs:
-    continue_prompt: ${reference_usefulness_prompt.output}
-    conn: gemini
-- name: combine_output
-  type: python
-  source:
-    type: code
-    path: combine_output.py
-  inputs:
-    case_summary: ${gemini_summary_llm.output}
-    case_reference: ${find_context.output}
-    llm_reference: ${gemini_reference_usefulness_llm.output}
 - name: create_faiss_index
   type: python
   source:

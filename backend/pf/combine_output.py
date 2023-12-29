@@ -8,7 +8,7 @@ from promptflow import tool
 def my_python_tool(case_summary: str, case_reference: dict, llm_reference: str) -> str:
     # Enrich each line in the case summary if it is in the case reference
     enriched_summary = enrich_summary_lines(case_summary, case_reference)
-
+    print(enriched_summary)
     # Combine the enriched summary with the LL.M. reference
     result = f"{enriched_summary}\n\n{llm_reference}"
 
@@ -23,4 +23,4 @@ def enrich_summary_lines(summary, reference):
 
 def enrich_line(line, ref_dict):
     # If the line is in the reference dictionary, append the reference to the end of the line
-    return f"{line} | *{ref_dict[line]}*" if line in ref_dict else line
+    return f"""{line} | REF_TEXT {ref_dict[line]} REF_TEXT""" if line in ref_dict else line

@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import logging
+import re
 
 logger = logging.getLogger(st.__name__)
 st.set_page_config(
@@ -452,5 +453,15 @@ if st.button('Test conenction'):
 
 if st.button('Analyse'):
     response = load_response_from_api(case, reference)
-    st.write(response)
-    
+    if response == 'error':
+        st.write(response)
+    else:
+        summary = response['summary_string']
+        reference = response['reference_dict']
+
+        for sl in summary.split('\n'):
+            if sl in reference:
+                with st.expander(sl):
+                    st.write(f'''{reference[sl]}''')
+            else:
+                st.write(sl)

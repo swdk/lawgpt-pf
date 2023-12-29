@@ -46,6 +46,7 @@ def find_context(connection: OpenAIConnection, created_index: bool, case_summary
 
 
 def extract_bullet_points(case_summary) -> list[str]:
+    case_summary = case_summary[:case_summary.find('**Keywords**')]
     pattern = re.compile(r'^\s*(-\s*.*)$', re.MULTILINE)
     matches = pattern.findall(case_summary)
     return matches

@@ -1,14 +1,12 @@
-2023-12-26 09:59:08 +0800   14444 execution.flow     INFO     Start executing nodes in thread pool mode.
-2023-12-26 09:59:08 +0800   14444 execution.flow     INFO     Start to run 6 nodes with concurrency level 16.
-2023-12-26 09:59:08 +0800   14444 execution.flow     INFO     Executing node replace_references_str. node run id: bdb11491-0471-4e3e-bf5b-cc166bf8bf9d_replace_references_str_0
-2023-12-26 09:59:08 +0800   14444 execution.flow     INFO     Node replace_references_str completes.
-2023-12-26 09:59:08 +0800   14444 execution.flow     INFO     Executing node summary_prompt. node run id: bdb11491-0471-4e3e-bf5b-cc166bf8bf9d_summary_prompt_0
-2023-12-26 09:59:08 +0800   14444 execution.flow     INFO     Node summary_prompt completes.
-2023-12-26 09:59:08 +0800   14444 execution.flow     INFO     Executing node gemini_summary_llm. node run id: bdb11491-0471-4e3e-bf5b-cc166bf8bf9d_gemini_summary_llm_0
-2023-12-26 09:59:39 +0800   14444 execution.flow     INFO     Node gemini_summary_llm completes.
-2023-12-26 09:59:39 +0800   14444 execution.flow     INFO     Executing node reference_usefulness_prompt. node run id: bdb11491-0471-4e3e-bf5b-cc166bf8bf9d_reference_usefulness_prompt_0
-2023-12-26 09:59:39 +0800   14444 execution.flow     INFO     Node reference_usefulness_prompt completes.
-2023-12-26 09:59:39 +0800   14444 execution.flow     INFO     Executing node gemini_reference_usefulness_llm. node run id: bdb11491-0471-4e3e-bf5b-cc166bf8bf9d_gemini_reference_usefulness_llm_0
-2023-12-26 09:59:54 +0800   14444 execution.flow     INFO     Node gemini_reference_usefulness_llm completes.
-2023-12-26 09:59:54 +0800   14444 execution.flow     INFO     Executing node combine_output. node run id: bdb11491-0471-4e3e-bf5b-cc166bf8bf9d_combine_output_0
-2023-12-26 09:59:54 +0800   14444 execution.flow     INFO     Node combine_output completes.
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Start executing nodes in thread pool mode.
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Start to run 5 nodes with concurrency level 16.
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Executing node replace_references_str. node run id: 77c58637-c5e7-4db2-bacc-4351ecedd3ed_replace_references_str_0
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Executing node create_faiss_index. node run id: 77c58637-c5e7-4db2-bacc-4351ecedd3ed_create_faiss_index_0
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Node replace_references_str completes.
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Executing node summary_prompt. node run id: 77c58637-c5e7-4db2-bacc-4351ecedd3ed_summary_prompt_0
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Node summary_prompt completes.
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Executing node gemini_summary_llm. node run id: 77c58637-c5e7-4db2-bacc-4351ecedd3ed_gemini_summary_llm_0
+2023-12-29 20:37:08 +0800   43968 execution.flow     INFO     Node create_faiss_index completes.
+2023-12-29 20:37:33 +0800   43968 execution.flow     INFO     Node gemini_summary_llm completes.
+2023-12-29 20:37:33 +0800   43968 execution.flow     INFO     Executing node find_context. node run id: 77c58637-c5e7-4db2-bacc-4351ecedd3ed_find_context_0
+2023-12-29 20:37:54 +0800   43968 execution.flow     INFO     Node find_context completes.
