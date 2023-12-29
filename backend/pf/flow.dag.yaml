@@ -679,5 +679,24 @@ nodes:
     type: code
     path: combine_output.py
   inputs:
-    input1: ${gemini_summary_llm.output}
-    input2: ${gemini_reference_usefulness_llm.output}
+    case_summary: ${gemini_summary_llm.output}
+    case_reference: ${find_context.output}
+    llm_reference: ${gemini_reference_usefulness_llm.output}
+- name: create_faiss_index
+  type: python
+  source:
+    type: code
+    path: create_faiss_index.py
+  inputs:
+    connection: open_ai_conenction
+    case_text: ${inputs.case}
+  aggregation: false
+- name: find_context
+  type: python
+  source:
+    type: code
+    path: find_context.py
+  inputs:
+    connection: open_ai_conenction
+    created_index: ${create_faiss_index.output}
+    case_summary: ${gemini_summary_llm.output}

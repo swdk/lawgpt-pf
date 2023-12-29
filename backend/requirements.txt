@@ -87,3 +87,4 @@ urllib3==2.1.0
 waitress==2.1.2
 Werkzeug==3.0.1
 zipp==3.17.0
+faiss-cpu==1.7.4

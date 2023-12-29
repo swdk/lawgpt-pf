@@ -19,6 +19,7 @@ services:
     environment:
       - DEBUG=True   # set an env var for flask
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OPEN_AI_API_KEY=${OPEN_AI_API_KEY}
     volumes:
       - ./backend:/app
 volumes:

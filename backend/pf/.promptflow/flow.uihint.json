@@ -1,3 +1,29 @@
 {
-  "nodes": {}
+  "nodes": {
+    "create_faiss_index": {
+      "variant_0": {
+        "inputs": {
+          "input1": [],
+          "case_text": []
+        }
+      }
+    },
+    "find_context": {
+      "variant_0": {
+        "inputs": {
+          "created_index": [],
+          "case_summary": []
+        }
+      }
+    },
+    "combine_output": {
+      "variant_0": {
+        "inputs": {
+          "case_summary": [],
+          "case_reference": [],
+          "llm_reference": []
+        }
+      }
+    }
+  }
 }

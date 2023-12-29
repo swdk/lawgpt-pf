@@ -7,7 +7,7 @@
     },
     "outputs": {
       "x": 67.5,
-      "y": 832,
+      "y": 922,
       "index": -1
     },
     "replace_references_str": {
@@ -21,24 +21,34 @@
       "index": 1
     },
     "gemini_summary_llm": {
-      "x": 12,
-      "y": 392,
+      "x": 177.8853759765625,
+      "y": 392.4014587402344,
       "index": 2
     },
     "reference_usefulness_prompt": {
-      "x": 123,
-      "y": 502,
+      "x": -55.52642822265625,
+      "y": 495.0555419921875,
       "index": 3
     },
     "gemini_reference_usefulness_llm": {
-      "x": 123,
-      "y": 612,
+      "x": -56.77423095703125,
+      "y": 608.6253662109375,
       "index": 4
     },
     "combine_output": {
       "x": 67.5,
       "y": 722,
       "index": 5
+    },
+    "create_faiss_index": {
+      "x": 318.5633544921875,
+      "y": 175.72177124023438,
+      "index": 6
+    },
+    "find_context": {
+      "x": 329.3537292480469,
+      "y": 578.8901824951172,
+      "index": 7
     }
   },
   "orientation": "Vertical"

@@ -4,7 +4,7 @@ import os
 
 from flask import Flask, jsonify, request
 from promptflow import load_flow
-from promptflow.connections import  CustomConnection
+from promptflow.connections import CustomConnection, OpenAIConnection
 from promptflow.entities import FlowContext
 from promptflow.exceptions import SystemErrorException, UserErrorException
 
@@ -56,17 +56,20 @@ def analyseCase():
     data = json.loads(raw_data)
     # logger.info(f"Start loading request data '{data}'.")
 
-    # configure flow contexts, create a new context object for each request to make sure they are thread safe.
-    connection_obj = CustomConnection(
-        name="gemini", 
-        secrets={"GEMINI_API_KEY":os.environ["GEMINI_API_KEY"]}
+    custom_connnection = CustomConnection(
+        name="gemini",
+        secrets={"GEMINI_API_KEY": os.environ["GEMINI_API_KEY"]}
     )
-    
-    
-    f.context = FlowContext(connections={"gemini_summary_llm":{"conn":connection_obj}, "gemini_reference_usefulness_llm":{"conn":connection_obj}})
+    openai_connnection = OpenAIConnection(
+        api_key=os.environ["OPEN_AI_API_KEY"]
+    )
+
+    f.context = FlowContext(connections={"gemini_summary_llm": {"conn": custom_connnection},
+                                         "gemini_reference_usefulness_llm": {"conn": custom_connnection},
+                                         "create_faiss_index": {"connection": openai_connnection},
+                                         "find_context": {"connection": openai_connnection}})
 
     result_dict = f(**data)
-    # print(result_dict)
     # Note: if specified streaming=True in the flow context, the result will be a generator
     # reference promptflow._sdk._serving.response_creator.ResponseCreator on how to handle it in app.
     # return jsonify(result_dict)
