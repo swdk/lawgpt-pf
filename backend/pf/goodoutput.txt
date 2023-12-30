@@ -428,3 +428,127 @@ Retrial, murder, manslaughter, provocation, diminished responsibility, abuse of 
 **Excerpts:**
 
 """A breach of the reasonable time requirement would only entitle the convicted person to remedies such as a reduction in penalty and payment of compensation."""
+
+
+-------
+
+Background of the case
+
+Appellant was tried and convicted three times for murdering his cohabitee in 2009
+Conviction was overturned twice by the Court of Appeal and once by the Court of Final Appeal (CFA) - Third trial resulted in the conviction of the appellant for murder again on 26th April 2018
+Court of Appeal quashed the conviction on 20th November 2020
+Court of Appeal ordered a third retrial by a majority decision
+Pertinent Laws
+
+Section 4 of the Homicide Ordinance (Cap 339)
+Section 83E(1) of the Criminal Procedure Ordinance (Cap 221)
+Case Nature
+
+Appeal
+Appeal Type
+
+Incorrect Jury Instructions Appeals
+Newton hearing
+
+N/A
+Evidence from Prosecution
+
+The deceased called her ex-husband on the day of the incident and expressed that the appellant had gone crazy, taken off his clothes, and attempted to jump off the building
+Had discovered used condoms in the rubbish bin at the rear staircase outside the flat on several occasions
+One of the prosecution witnesses had an affair with the deceased
+Evidence from Defense
+
+Appellant claimed that the deceased was having an affair with another man and that he had a strong suspicion about the deceased’s infidelity
+The deceased taunted him about becoming a garbage collector, his poor performance as a sexual partner, and that he was not his daughter’s father
+Appellant lost control of himself and killed the deceased upon being taunted
+Psychiatric evidence was presented, showing that the appellant had an abnormality of the mind due to the combined effects of a Major Depressive Disorder and Acute Dissociative Reactions to Stressful Events, coupled with four underlying factors
+Prosecution Case
+
+The prosecution alleged that the appellant murdered the deceased with murderous intent
+Defence Case
+
+The appellant admitted to killing the deceased, but he pleaded guilty to manslaughter by reason of provocation - Diminished responsibility was also put forth as a defence
+Defendant's Plea
+
+Guilty to manslaughter by reason of provocation
+Point of Dispute
+
+Whether the appellant's actions were justified by provocation or diminished responsibility, and if a third retrial should be ordered
+Guidelines
+
+The discretion to order a retrial rests with the Court of Appeal, after quashing a conviction below
+
+A retrial is only ordered if “the interests of justice” require it
+
+The exercise of this discretion is subject to review by the CFA only if there has been a serious error of law or principle or approach
+
+A retrial may be ordered even if the accused has already undergone a trial and an appeal, but this is an unusual course of action
+
+Factors taken into account in the exercise of this discretion include:
+
+- The number of trials and appeals
+    - The lapse of time
+    - The need for finality
+    - The seriousness of the offence and the strength of the case
+    - The length and complexity of a further trial
+    - The nature of the case and the matters in issue
+    - The alternative conviction of manslaughter
+    - The length of time served
+    - Whether the appellant can receive a fair trial
+
+Disposition
+
+The Court of Appeal ordered a third retrial by a majority decision.
+The CFA unanimously quashed the order for a third retrial.
+The CFA entered a conviction for manslaughter on the basis of provocation and sentenced the appellant to time served.
+Summary
+
+The appellant killed the deceased in 2009 and was convicted of murder three times, all of which were overturned on appeal
+The CFA ordered a third retrial, then quashed the order after finding that the Court of Appeal made several errors in its exercise of discretion, including focusing on irrelevant considerations and misinterpreting the evidence
+The CFA entered a conviction for manslaughter on the basis of provocation and sentenced the appellant to time served.
+Principles established
+
+The discretion to order a retrial should be exercised judicially and based on the interests of justice
+Consideration should be given to all relevant factors, including the number of trials and appeals, the lapse of time, the need for finality, the seriousness of the offence and the strength of the case, the length and complexity of a further trial, the nature of the case and the matters in issue, the alternative conviction of manslaughter, the length of time served, and whether the appellant can receive a fair trial
+A retrial is an unusual course of action, especially if the accused has already undergone a trial and an appeal, and strong reasons must exist to justify it
+The interests of justice extend beyond the appellant’s interests, including the interests of the public in seeing a brutal crime resolved by a jury at trial.
+Factors considered
+
+The appellant had already undergone three trials and three appeals, spanning a period of eleven years
+The appellant had been remanded in custody for almost twelve years at the time of the appeal
+The prosecution had a strong case for murder, supported by the appellant’s admission of killing the deceased and the evidence of an affair between the deceased and another man
+The defence of provocation was reasonably arguable, supported by the appellant’s story, the circumstances of the killing, and psychiatric evidence
+A third retrial would have been a further ordeal for the appellant and would have placed a strain on the resources of the court
+The CFA held that the interests of justice did not require a third retrial
+How this case will be useful for future references
+
+This case provides guidance on the exercise of discretion in ordering a retrial
+It sets out the factors that must be considered, including the number of trials and appeals, the lapse of time, the interests of the appellant and the public, and the strength of the prosecution and defence cases
+It also demonstrates the importance of a fair trial and the need to avoid oppressive or vexatious proceedings
+Keywords Retrial, Murder, Manslaughter, Provocation, Diminished responsibility, Interests of justice, Abuse of discretion
+
+References
+
+Argument: The Court of Appeal erred in taking into account the conduct of the appellant’s legal representatives in his previous trials, particularly the third trial, as factors which were relevant and justified a further retrial.
+
+Reference: R v Bell [2007] EWCA Crim 2799
+
+Excerpts:
+
+"""In respect of the conduct of Mr Bruce, Zervos JA is particularly concerned that it may reflect a deliberate tactical choice by him in the conduct of the defence case. I am not persuaded that the transcript supports such a conclusion. I cannot see in this case, in contrast with what occurred in the first trial, any positive action by Mr Bruce or Mr Chau to persuade the Judge to pursue a particular course and nothing was said or done by either counsel to mislead the Judge. I cannot see any basis for suggesting that Mr Bruce intentionally stood by and allowed the Judge to fall into error. Nor can I see how any tactical benefit would accrue to the applicant by not reminding the jury of the relevance of the psychiatric evidence to their decision on the issue of loss of control. Indeed, quite the contrary. It was positively adverse to the applicant and that is why we are allowing the appeal. I cannot, therefore, agree that there is a basis for concluding that Mr Bruce deliberately pursued a tactical course in his conduct of the defence case which led to the error of the judge which lead to this appeal being allowed."""
+
+Argument: The Court of Appeal did not sufficiently consider whether the prosecution had a strong case for murder.
+
+Reference: R v Tam Ho Nam (No 2) [2018] 1 HKLRD 413
+
+Excerpts:
+
+"""The interests of justice of course include a consideration of an accused’s interests and circumstances. The criminal justice system is there to bring matters to a conclusion without undue delay and without oppression; these are ‘accepted norms’. It should be acknowledged that any criminal trial is to some degree an ordeal for the accused. The interests of justice also include the interest of the public in seeing those who are guilty of serious crimes brought to justice and not escape merely because of a technical error in the conduct of a trial or in the summing up to a jury. In Au Pui Kuen v Attorney General of Hong Kong, Lord Diplock referred to the following passage from the judgment of Gould Ag CJ in Ng Yuk Kin v The Crown: that there may be cases where it ‘is in the interest of the public, the complainant, and the appellant himself that the question of guilt or otherwise be determined finally by the verdict of a jury, and not left as something which must remain undecided by reason of a defect in legal machinery’. In assessing the public interest, a court must take into account the views of the prosecution which is best qualified (and I would add has the duty) to present the views of the public, although it must ultimately be for the court to determine what is in the public interest. The strength of the prosecution case is also a relevant consideration."""
+
+Argument: The Court of Appeal failed to sufficiently consider whether the delay or lapse of time in proceedings rendered an order for retrial oppressive and unjust, or a breach of the appellant’s right to be tried without undue delay under article 11(2)(c) of the Hong Kong Bill of Rights.
+
+Reference: Mok Kin Kau v HKSAR [2015] 3 HKLRD 433
+
+Excerpts:
+
+"""Although it is not unprecedented for a second retrial to be ordered, the cases accept that this is an ‘unusual’ course to take, even where the accused has not served the whole of his or her sentence as was the case in Mok Kin Kau v HKSAR. Given that the ordering of a second retrial is an unusual course, a court would have to be persuaded by cogent and compelling reasons to make such an order. This is consistent with the interests of justice, but of course all relevant factors must be carefully weighed in this exercise of discretion."""

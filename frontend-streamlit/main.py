@@ -458,6 +458,7 @@ if st.button('Analyse'):
     else:
         summary = response['summary_string']
         reference = response['reference_dict']
+        foot_notes = response['footnote_data']
 
         for sl in summary.split('\n'):
             if sl in reference:
@@ -465,3 +466,8 @@ if st.button('Analyse'):
                     st.write(f'''{reference[sl]}''')
             else:
                 st.write(sl)
+
+        st.write("**References**")
+        for fn in foot_notes:
+            with st.expander(fn['footnotes_texts']):
+                st.write(f'''{fn["sentence"]}''')
