@@ -896,5 +896,6 @@ nodes:
     path: find_context.py
   inputs:
     connection: open_ai_conenction
-    created_index: ${create_faiss_index.output}
     case_summary: ${gemini_summary_llm.output}
+    index_dir: ${create_faiss_index.output}
+    case_text: ${inputs.case}

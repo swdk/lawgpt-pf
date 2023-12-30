@@ -1,26 +1,12 @@
-2023-12-30 11:32:41 +0800   66469 execution.flow     INFO     Start executing nodes in thread pool mode.
-2023-12-30 11:32:41 +0800   66469 execution.flow     INFO     Start to run 5 nodes with concurrency level 16.
-2023-12-30 11:32:41 +0800   66469 execution.flow     INFO     Executing node replace_references_str. node run id: 5efe3817-9058-4ca7-bf62-edd76e877a80_replace_references_str_0
-2023-12-30 11:32:41 +0800   66469 execution.flow     INFO     Executing node create_faiss_index. node run id: 5efe3817-9058-4ca7-bf62-edd76e877a80_create_faiss_index_0
-2023-12-30 11:32:41 +0800   66469 execution.flow     INFO     Node create_faiss_index completes.
-2023-12-30 11:32:41 +0800   66469 execution          ERROR    Node replace_references_str in line 0 failed. Exception: Execution failure in 'replace_references_str': (KeyError) '1'.
-Traceback (most recent call last):
-  File "/Users/swdk/ml/lawgpt-pf/.venv/lib/python3.10/site-packages/promptflow/_core/flow_execution_context.py", line 185, in _invoke_tool_with_timer
-    return f(**kwargs)
-  File "/Users/swdk/ml/lawgpt-pf/.venv/lib/python3.10/site-packages/promptflow/_core/tool.py", line 100, in decorated_tool
-    output = func(*args, **kwargs)
-  File "/Users/swdk/ml/lawgpt-pf/backend/pf/find_references.py", line 57, in find_references
-    'footnotes_texts': ' ,'.join(set(reference_dict[f] for f in footnotes))
-  File "/Users/swdk/ml/lawgpt-pf/backend/pf/find_references.py", line 57, in <genexpr>
-    'footnotes_texts': ' ,'.join(set(reference_dict[f] for f in footnotes))
-KeyError: '1'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/Users/swdk/ml/lawgpt-pf/.venv/lib/python3.10/site-packages/promptflow/_core/flow_execution_context.py", line 89, in invoke_tool
-    result = self._invoke_tool_with_timer(node, f, kwargs)
-  File "/Users/swdk/ml/lawgpt-pf/.venv/lib/python3.10/site-packages/promptflow/_core/flow_execution_context.py", line 196, in _invoke_tool_with_timer
-    raise ToolExecutionError(node_name=node_name, module=module) from e
-promptflow._core._errors.ToolExecutionError: Execution failure in 'replace_references_str': (KeyError) '1'
-2023-12-30 11:32:41 +0800   66469 execution          ERROR    Execution of one node has failed. Cancelling all running nodes: replace_references_str.
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Start executing nodes in thread pool mode.
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Start to run 5 nodes with concurrency level 16.
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Executing node replace_references_str. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_replace_references_str_0
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Executing node create_faiss_index. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_create_faiss_index_0
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Node create_faiss_index completes.
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Node replace_references_str completes.
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Executing node summary_prompt. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_summary_prompt_0
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Node summary_prompt completes.
+2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Executing node gemini_summary_llm. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_gemini_summary_llm_0
+2023-12-30 16:17:15 +0800   26958 execution.flow     INFO     Node gemini_summary_llm completes.
+2023-12-30 16:17:15 +0800   26958 execution.flow     INFO     Executing node find_context. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_find_context_0
+2023-12-30 16:17:34 +0800   26958 execution.flow     INFO     Node find_context completes.

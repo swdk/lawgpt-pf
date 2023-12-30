@@ -7,6 +7,7 @@ from utils.lock import acquire_lock
 from utils.index import FAISSIndex
 from utils.logging import log
 from utils.oai import OAIEmbedding
+from utils.hash import compute_hash
 from promptflow.connections import OpenAIConnection
 from constants import INDEX_DIR
 
@@ -22,12 +23,11 @@ def create_faiss_index(connection: OpenAIConnection, case_text: str) -> str:
         if not os.path.exists(INDEX_DIR):
             os.makedirs(INDEX_DIR)
 
-        # chunk_size = int(os.environ.get("CHUNK_SIZE", 1024))
-        # chunk_overlap = int(os.environ.get("CHUNK_OVERLAP", 64))
-        # log(f"Chunk size: {chunk_size}, chunk overlap: {chunk_overlap}")
+        hash_result = compute_hash(case_text)
 
-        index_persistent_path = Path(INDEX_DIR).resolve().as_posix()
-        lock_path = index_persistent_path + ".lock"
+        index_persistent_path = Path(INDEX_DIR)/hash_result
+        index_persistent_path = index_persistent_path.resolve().as_posix()
+        lock_path = index_persistent_path + f"_{hash_result}.lock"
         log("Index path: " + os.path.abspath(index_persistent_path))
 
         with acquire_lock(lock_path):
@@ -53,26 +53,11 @@ def create_faiss_index(connection: OpenAIConnection, case_text: str) -> str:
             log("Index built: " + index_persistent_path)
     except Exception as e:
         print(e)
-        return False
-    return True
+        return None
+    return index_persistent_path
 
 
-# Split the text into chunks with CHUNK_SIZE and CHUNK_OVERLAP as character count
 def split_text(text, chunk_size):
-    # # Calculate the number of chunks
-    # num_chunks = (len(text) - chunk_overlap) // (chunk_size - chunk_overlap)
-
-    # # Split the text into chunks
-    # chunks = []
-    # for i in range(num_chunks):
-    #     start = i * (chunk_size - chunk_overlap)
-    #     end = start + chunk_size
-    #     chunks.append(text[start:end])
-
-    # # Add the last chunk
-    # chunks.append(text[num_chunks * (chunk_size - chunk_overlap):])
-    # return chunks
-
     lines = text.split('\n')
     chunks = [lines[i:i+chunk_size] for i in range(0, len(lines), chunk_size)]
     return ['\n'.join(chunk) for chunk in chunks]

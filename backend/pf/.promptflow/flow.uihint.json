@@ -11,8 +11,9 @@
     "find_context": {
       "variant_0": {
         "inputs": {
-          "created_index": [],
-          "case_summary": []
+          "case_summary": [],
+          "index_dir": [],
+          "case_text": []
         }
       }
     },

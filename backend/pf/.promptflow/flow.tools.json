@@ -182,12 +182,17 @@
             "OpenAIConnection"
           ]
         },
-        "created_index": {
+        "index_dir": {
           "type": [
-            "bool"
+            "string"
           ]
         },
         "case_summary": {
+          "type": [
+            "string"
+          ]
+        },
+        "case_text": {
           "type": [
             "string"
           ]
