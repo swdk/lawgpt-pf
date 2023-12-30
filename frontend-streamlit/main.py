@@ -277,7 +277,7 @@ Mr Robert Pang SC and Ms Denise Souza, instructed by Tse Yuen Ting Wong, assigne
 
 Mr William Tam SC, DDPP, Mr Ira Lui, ADPP and Mr Andy Lo, SPP, of the Department of Justice, for the respondent
 
-""")
+""", height=300)
 reference = st.text_area("References", """ 
 [1] [2014] 4 HKC 145 and [2021] 1 HKLRD 26 (“CA judgment”).
 
