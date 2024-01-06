@@ -448,9 +448,9 @@ def load_response_from_api(case, reference):
     return response.get('result')
 
 
-if st.button('Test conenction'):
-    response = test_api_connection()
-    st.write(response)
+# if st.button('Test conenction'):
+#     response = test_api_connection()
+#     st.write(response)
 
 if st.button('Analyse'):
     response = load_response_from_api(case, reference)
@@ -469,6 +469,12 @@ if st.button('Analyse'):
                 st.write(sl)
 
         st.write("**References**")
+
         for fn in foot_notes:
-            with st.expander(fn['footnotes_texts']):
-                st.write(f'''{fn["sentence"]}''')
+            if len(fn['case_detected']) > 0:
+                with st.expander(fn['case_detected']):
+                    st.write(fn['footnotes_texts'])
+                    st.write(f'''{fn["sentence"]}''')
+            else:
+                with st.expander(fn['footnotes_texts']):
+                    st.write(f'''{fn["sentence"]}''')

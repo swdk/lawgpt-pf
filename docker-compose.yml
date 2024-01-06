@@ -1,7 +1,7 @@
 version: "3"
 services:
   frontend:
-    # image: test/frontend
+    # image: swdk/frontend
     build: ./frontend-streamlit
     command: streamlit run main.py
     depends_on:
@@ -11,7 +11,7 @@ services:
     volumes:
       - ./frontend-streamlit:/app
   backend:
-    # image: test/backend
+    # image: swdk/backend
     build: ./backend
     command: python main.py
     ports:

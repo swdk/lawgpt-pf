@@ -6,20 +6,12 @@ import nltk
 # Please update the function name/signature per need
 
 
-# import nltk
-# nltk.download('punkt')
-
-# def find_sentences_with_word(text, word):
-#     sentences = nltk.sent_tokenize(text)
-#     result_sentences = [sentence for sentence in sentences if word in nltk.word_tokenize(sentence)]
-#     return result_sentences
-
-
 @tool
 def find_references(main_text: str, reference_text: str) -> str:
     # Replace text like [12]-[14] with [12], [13], [14]
     main_text = re.sub(r'\[(\d{1,3})\]-\[(\d{1,3})\]', lambda match: ', '.join(
         [f'[{i}]' for i in range(int(match.group(1)), int(match.group(2)) + 1)]), main_text)
+
     footnotes_data = []
 
     if reference_text:
@@ -46,17 +38,55 @@ def find_references(main_text: str, reference_text: str) -> str:
 
         # Extract sentences containing footnotes and their respective footnotes
         main_sentences = nltk.sent_tokenize(main_text)
-
         for sentence in main_sentences:
             footnotes = re.findall(r'\[(\d{1,3})\]', sentence)
             if footnotes:
+                footnotes_texts = ', '.join(
+                    set(reference_dict[f] for f in footnotes if f in reference_dict))
                 footnotes_data.append({
                     'sentence': sentence,
-                    'footnotes_texts': ' ,'.join(set(reference_dict[f] for f in footnotes if f in reference_dict))
+                    'footnotes_texts': footnotes_texts,
+                    'case_detected': ', '.join(detect_cases(sentence + ' ' + footnotes_texts))
                 })
 
     # Replace references in the main text
-    # main_text = re.sub(
+    # replace_main_text = re.sub(
     #     r'\[(\d{1,3})\]', lambda match: f' ** {reference_dict.get(match.group(1), "")} **', main_text)
 
     return {'main_text': main_text, 'footnotes_data': footnotes_data}
+
+
+def detect_cases(text: str):
+    # this is kinda weird
+    text = text.replace('‑', '-')
+    text = text.replace('In', 'in')
+    text = text.replace('See', 'see')
+    text = text.replace('of', 'Of')
+
+    # https://en.wikipedia.org/wiki/Case_citation#United_Kingdom
+    text = text.replace(' Crim ', ' CRIM ')
+    text = text.replace(' Cr App R ', ' CAR ')
+    text = text.replace(' Cr App R ', ' CAR ')
+    text = text.replace(' Cox CC ', ' CCC ')
+    text = text.replace(' Cox ', ' CCC ')
+
+    # Regular expression pattern to match law case references
+
+    case_pattern = r'(?:\b[A-Z][\w-]' \
+        r'*(?:\s+[A-Z][\w-]*)' \
+        r'*(?:\s(?:\([\w\s-]+\)|[A-Z][\w-]' \
+        r'*(?:\s+[A-Z][\w-]*)*))?' \
+        r' v\.? ' \
+        r'[A-Z][\w-]' \
+        r'*(?:\s+[A-Z][\w-]*)' \
+        r'*(?:\s(?:\([\w\s-]+\)|[A-Z][\w-]' \
+        r'*(?:\s+[A-Z][\w-]*)*))?)' \
+        r'*(?:\s(?:\(\d{4}\)|\d{1,}(?:\/\d{4})?|\[\d{4}\]))' \
+        r'*(?:\s*(?:\d+)? [A-Z\s]+ \d+(?:/\d+)?)?'
+
+    case_references = re.findall(case_pattern, text)
+
+    # Print the detected law case references
+    case_detected = set(cr.strip()
+                        for cr in case_references if len(cr.strip()) > 4)
+    return case_detected

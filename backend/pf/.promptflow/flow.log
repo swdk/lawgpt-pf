@@ -1,12 +1,12 @@
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Start executing nodes in thread pool mode.
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Start to run 5 nodes with concurrency level 16.
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Executing node replace_references_str. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_replace_references_str_0
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Executing node create_faiss_index. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_create_faiss_index_0
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Node create_faiss_index completes.
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Node replace_references_str completes.
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Executing node summary_prompt. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_summary_prompt_0
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Node summary_prompt completes.
-2023-12-30 16:16:52 +0800   26958 execution.flow     INFO     Executing node gemini_summary_llm. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_gemini_summary_llm_0
-2023-12-30 16:17:15 +0800   26958 execution.flow     INFO     Node gemini_summary_llm completes.
-2023-12-30 16:17:15 +0800   26958 execution.flow     INFO     Executing node find_context. node run id: 88aa5ca3-0367-43b0-94d8-5ac95425567b_find_context_0
-2023-12-30 16:17:34 +0800   26958 execution.flow     INFO     Node find_context completes.
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Start executing nodes in thread pool mode.
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Start to run 5 nodes with concurrency level 16.
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Executing node replace_references_str. node run id: 44c552f5-2c87-4617-83ec-fba8aace0873_replace_references_str_0
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Executing node create_faiss_index. node run id: 44c552f5-2c87-4617-83ec-fba8aace0873_create_faiss_index_0
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Node create_faiss_index completes.
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Node replace_references_str completes.
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Executing node summary_prompt. node run id: 44c552f5-2c87-4617-83ec-fba8aace0873_summary_prompt_0
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Node summary_prompt completes.
+2024-01-05 16:02:48 +0800    3372 execution.flow     INFO     Executing node gemini_summary_llm. node run id: 44c552f5-2c87-4617-83ec-fba8aace0873_gemini_summary_llm_0
+2024-01-05 16:03:10 +0800    3372 execution.flow     INFO     Node gemini_summary_llm completes.
+2024-01-05 16:03:10 +0800    3372 execution.flow     INFO     Executing node find_context. node run id: 44c552f5-2c87-4617-83ec-fba8aace0873_find_context_0
+2024-01-05 16:03:43 +0800    3372 execution.flow     INFO     Node find_context completes.
