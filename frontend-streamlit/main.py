@@ -461,20 +461,24 @@ if st.button('Analyse'):
         reference = response['reference_dict']
         foot_notes = response['footnote_data']
 
+        # st.write(f'summary:{summary}')
+        # st.write(f'reference_dict:{reference}')
+
         for sl in summary.split('\n'):
+            sl = sl.strip()
             if sl in reference:
                 with st.expander(sl):
                     st.write(f'''{reference[sl]}''')
             else:
                 st.write(sl)
 
-        st.write("**References**")
+        # st.write("**References**")
 
-        for fn in foot_notes:
-            if len(fn['case_detected']) > 0:
-                with st.expander(fn['case_detected']):
-                    st.write(fn['footnotes_texts'])
-                    st.write(f'''{fn["sentence"]}''')
-            else:
-                with st.expander(fn['footnotes_texts']):
-                    st.write(f'''{fn["sentence"]}''')
+        # for fn in foot_notes:
+        #     if len(fn['case_detected']) > 0:
+        #         with st.expander(fn['case_detected']):
+        #             st.write(fn['footnotes_texts'])
+        #             st.write(f'''{fn["sentence"]}''')
+        #     else:
+        #         with st.expander(fn['footnotes_texts']):
+        #             st.write(f'''{fn["sentence"]}''')
