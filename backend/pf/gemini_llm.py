@@ -1,7 +1,7 @@
 from promptflow import tool
 from promptflow.connections import CustomConnection
 import google.generativeai as genai
-
+import json
 # The inputs section will change based on the arguments of the tool function, after you save the code
 # Adding type to arguments and return value will help the system show the types properly
 # Please update the function name/signature per need
@@ -33,5 +33,18 @@ def my_python_tool(input1: str, conn: CustomConnection) -> str:
             "threshold": "HIGH",
         }
     ])   
-    # print(response.candidates)
-    return response.text
+    print(f'response.text{response.text}')
+    
+    # Split the text into sections based on the headers
+    sections = response.text.replace("-","").split("**")[1:]
+    # Create a dictionary to store the data
+    data = {}
+    for i in range(0, len(sections), 2):
+        header = sections[i]
+        content = sections[i + 1].split("\n")
+        data[header] = [c.strip() for c in content if len(c.strip()) > 0]
+
+    # Convert the dictionary to JSON format
+    json_data = json.dumps(data, indent=4)
+    print(f'json_data{json_data}')
+    return json_data

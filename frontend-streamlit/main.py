@@ -1,3 +1,4 @@
+import json
 import streamlit as st
 import requests
 import logging
@@ -457,20 +458,38 @@ if st.button('Analyse'):
     if response == 'error':
         st.write(response)
     else:
-        summary = response['summary_string']
+        summary = json.loads(response['summary_string'])
         reference = response['reference_dict']
-        foot_notes = response['footnote_data']
+        # foot_notes = response['footnote_data']
 
         # st.write(f'summary:{summary}')
         # st.write(f'reference_dict:{reference}')
 
-        for sl in summary.split('\n'):
-            sl = sl.strip()
-            if sl in reference:
-                with st.expander(sl):
-                    st.write(f'''{reference[sl]}''')
-            else:
-                st.write(sl)
+        # contents can be a list or a string or just a string
+        for header, contents in summary.items():
+            # sl = sl.strip()
+            st.write(f'''**{header}**''')
+            if isinstance(contents, list):
+                for content in contents:
+                    if content in reference:
+                        with st.expander(content):
+                            st.write(f'''{reference[content]}''')
+                    else:
+                        st.write(content)
+            elif '\n' in contents:
+                for content in contents.split('\n'):                
+                    if content in reference:
+                        with st.expander(content):
+                            st.write(f'''{reference[content]}''')
+                    else:
+                        st.write(content)
+            else:                
+                if contents in reference:
+                    with st.expander(contents):
+                        st.write(f'''{reference[contents]}''')
+                else:
+                    st.write(contents)
+                
 
         # st.write("**References**")
 

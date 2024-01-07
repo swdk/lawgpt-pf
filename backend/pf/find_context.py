@@ -20,7 +20,7 @@ nltk.download('stopwords')
 # The inputs section will change based on the arguments of the tool function, after you save the code
 # Adding type to arguments and return value will help the system show the types properly
 # Please update the function name/signature per need
-
+import json
 
 @tool
 def find_context(connection: OpenAIConnection, index_dir: str, case_summary: str, case_text: str) -> str:
@@ -29,8 +29,17 @@ def find_context(connection: OpenAIConnection, index_dir: str, case_summary: str
     context_dict = dict()
     os.environ["OPENAI_API_KEY"] = connection.api_key
 
-    bullet_points = extract_bullet_points(case_summary)
-    # print(f'bullet_points:{bullet_points}')
+    # bullet_points = extract_bullet_points(case_summary)
+    print(case_summary)
+
+    bullet_points = []
+    case_summary = json.loads(case_summary)
+    # handle case where case_summary is a list of strings and sometimes just a string
+    for header, content in case_summary.items():
+        if header in  ["Background of the case","Pertinent Laws","Newton hearing","Evidence from Prosecution", "Evidence from Defense", "Prosecution Case", "Defence Case","Defendant's Plea", "Point of Dispute","Guidelines","Disposition","Summary","Principles established", "Factors considered"]:
+            bullet_points.extend(content)
+        
+    print(f'bullet_points:{bullet_points}')
     for bp in bullet_points:
         bp = bp.strip()
         if bp == '- N/A':
@@ -58,11 +67,11 @@ def find_context(connection: OpenAIConnection, index_dir: str, case_summary: str
     return context_dict
 
 
-def extract_bullet_points(case_summary) -> list[str]:
-    case_summary = case_summary[:case_summary.find('**Keywords**')]
-    pattern = re.compile(r'^\s*(-\s*.*)$', re.MULTILINE)
-    matches = pattern.findall(case_summary)
-    return matches
+# def extract_bullet_points(case_summary) -> list[str]:
+#     case_summary = case_summary[:case_summary.find('**Keywords**')]
+#     pattern = re.compile(r'^\s*(-\s*.*)$', re.MULTILINE)
+#     matches = pattern.findall(case_summary)
+#     return matches
 
 
 def find_sentence_with_most_relevant_words(bullet_point, paragraph, threshold):
@@ -70,7 +79,7 @@ def find_sentence_with_most_relevant_words(bullet_point, paragraph, threshold):
     stop_words = set(stopwords.words('english'))
 
     def tokenize_and_filter(sentence):
-        return [word.lower() for word in nltk.word_tokenize(sentence) if word.lower() not in stop_words]
+        return [word.lower() for word in nltk.word_tokenize(sentence) if word.lower() not in stop_words and len(word) > 1]
 
     bp_words = tokenize_and_filter(bullet_point)
 
